@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-col px-4 py-6">
+              <div class="flex flex-col items-center gap-6">
+                <div
+                  class="bg-center bg-no-repeat aspect-video bg-cover rounded-xl w-full max-w-[360px]"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5UOQJivhbbcDQAfywVoqv-mzNbxvTpD4BxqZw7TUePXHSNZAqx-8GIrwnqE8-81iMgSM-RBnqEGZ0TXshduajACcz5VPGN-3Coy10AdNICr8cuFsxIu471NxRmpRe2yg8Jqy6pGVz8x_eJl-_O1Gt-ceQOZoa2cLErKquvLvXyjUdMlsBc0hBJOW5putjJZ40XyGHHh44vKkSSJxYlhNbSPUS_lvYdfUlRk6LuUiujWA75Rsi5PLK0pl1a_6axoWCXpS0NwqFYqE");'
+                ></div>
+                <div class="flex max-w-[480px] flex-col items-center gap-2">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">Oops! Something went wrong.</p>
+                  <p class="text-white text-sm font-normal leading-normal max-w-[480px] text-center">
+                    We encountered an unexpected issue. Please try again later or contact our support team for assistance.
+                  </p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#2d372a] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Contact Support</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock content %}

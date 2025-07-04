@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+        <link
+          rel="stylesheet"
+          as="style"
+          onload="this.rel='stylesheet'"
+          href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        />
+    
+        <title c=>ITM-LLC</title>
+        <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+      </head>
+    
+
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#131712] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+          
+          <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2d372a] px-10 py-3">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"><a href="{% url 'home' %}">ITM-LLC</a>  </h2>
+            </div>
+            <div class="flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-white text-sm font-medium leading-normal" href="{% url 'products' %}">Products</a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">Services</a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">About</a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">News</a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">Careers</a>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#53d22c] text-[#131712] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Contact Us</span>
+              </button>
+            </div>
+          </header>
+    {% block content %}
+    {% endblock content %}
+    <footer class="flex justify-center">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+            <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+              <a class="text-[#a5b6a0] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+              <a class="text-[#a5b6a0] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+            </div>
+            <p class="text-[#a5b6a0] text-base font-normal leading-normal">© 2024 DefenseTech. All rights reserved.</p>
+          </footer>
+        </div>
+      </footer>
+</body>
+
+
+
+
+
+

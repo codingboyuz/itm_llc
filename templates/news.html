@@ -1,5 +1,3 @@
-
-
 <html>
   <head>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -7,7 +5,7 @@
       rel="stylesheet"
       as="style"
       onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
     <title>Stitch Design</title>
@@ -16,168 +14,125 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#f8fbfa] group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#131612] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8f2ec] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#0e1a13]">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2e352c] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
             <div class="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_6_535)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
-                    fill="currentColor"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_6_535"><rect width="48" height="48" fill="white"></rect></clipPath>
-                </defs>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
               </svg>
             </div>
-            <h2 class="text-[#0e1a13] text-lg font-bold leading-tight tracking-[-0.015em]">ShieldTech</h2>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
             <div class="flex items-center gap-9">
-              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Products</a>
-              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Solutions</a>
-              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Resources</a>
-              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">About Us</a>
-              <a class="text-[#0e1a13] text-sm font-medium leading-normal" href="#">Contact</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Products</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Services</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">News</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Careers</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
             </div>
-            <div class="flex gap-2">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e8f2ec] text-[#0e1a13] text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">My Account</span>
-              </button>
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#e8f2ec] text-[#0e1a13] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
-              >
-                <div class="text-[#0e1a13]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
-                    ></path>
-                  </svg>
-                </div>
-              </button>
-            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#2e352c] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">My Account</span>
+            </button>
           </div>
         </header>
-        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#0e1a13] tracking-light text-[32px] font-bold leading-tight min-w-72">News &amp; Updates</p></div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">Press Release</p>
-                  <p class="text-[#0e1a13] text-base font-bold leading-tight">ShieldTech Announces New Line of Tactical Gear</p>
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">
-                    ShieldTech, a leading manufacturer of military protective equipment, today announced the launch of its new line of tactical gear designed for enhanced
-                    performance and protection in the field.
-                  </p>
-                </div>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">News</p></div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
                 <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDoUOcDAPGPXb7Oa6vNCi3IweOcI-_7uAN2TdaLePsSOq75FB-jiM7O31gRre-FggsKUmVWcgYWpN66eYxbr82QVuBJSk0XsVvjAzCvbydOSGUZe32A3rUabhr7OTVh_pJW7xq9kiJ7BaE2RH_hG7gQdL0_gsESbcLTZAde8TRlOdmIvMqWtP0L1Zk5PfOgA2xhbVHTQjptIvithskwIwWWsPIGmWlxg_rYb73ZC1kKRQaJNj68zfjeUqU4pv5hv_8Wz2PEECdYB8A");'
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSWGDkL8lqHCRAQQuezJCG2SodCp3S9INs9UuFS_iv8k8zTLA6owy6_YwfW1-YWC4uZxrPCx24Hyz4-JDolxZVOdVVN0pgc_YfRqG7rV7L4O3XRCLBnck6bsHvQ1eH-HzARMeCitnJV-sMBOJP2Rsl2qRJGu37vzazB2iUQ1gCTZrBNaEJGRfREj4CN2qQCf6th_ul_T1ZegfmVyWiJ8P1tnGoXNFNLC0LfliP-v2QYjQi5m0CNsFT-Ifwufxg0b1dVF7wIhYNtZM");'
                 ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Press Release</p>
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech Announces Strategic Partnership with Global Aerospace Innovators</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
+                      DefenseTech, a leading provider of advanced defense solutions, today announced a strategic partnership with Global Aerospace Innovators, a renowned aerospace
+                      technology company. This collaboration aims to integrate cutting-edge technologies and expertise to develop next-generation defense systems.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">Company Announcement</p>
-                  <p class="text-[#0e1a13] text-base font-bold leading-tight">ShieldTech Expands Manufacturing Capacity</p>
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">
-                    In response to growing demand, ShieldTech is pleased to announce the expansion of its manufacturing facilities, enabling the company to increase production and
-                    meet the needs of its customers more effectively.
-                  </p>
-                </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
                 <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxZWFf7BRpKiDNlWgf_3H0_9hHzKjxgkVUfTiv-qz80ApmOaqsIC2AtFM_84pYgJVoV5zxFRdb1BNKuXk3ouZWruXszcctZhMIBMf-4oMjm9EZKBKQm2yKLOxmSPsbTOEI5fGWQuYGG7VO4HrTgDv_NxnpJxOPmYGIyS3iIq1tTUMnmuSEo70HzsB6v4gHCr-aJh4Uav82ybQJ0qCqreOb9cYCZfnBE-VoyIIbGCmRTbNXHKpVW6f2iE3iYt8oG-F9nS7Dhq3UKzk");'
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC147tEVzrg571SEj46-79V33WejPBjDM6HEfaaIlx2eGfAKWqeRGi8ZyXJDL5xUQWMiEFa7fipzUb1DinF418lkXNo8EET7K6unJ7MG510iodRN6f9jZaLoR--ple5V1QTjU7iT5Nj6SEyCtz3f4HalO_ZY4uAZ8o9gLJ48wEHwwyrjEtjbsEYu9XlepteIcB99VDNdGR7W0FjZNPt9Hg78GLl2-o7OpBGQWYh7t6ghH89qBGV_5-1mACOTimqbqh34tqPPdAgvHQ");'
                 ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Industry Update</p>
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech Showcases Latest Innovations at International Defense Expo</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
+                      DefenseTech recently participated in the International Defense Expo, showcasing its latest advancements in military technology. The company's exhibit featured
+                      a range of innovative products, including unmanned aerial vehicles, advanced communication systems, and precision-guided munitions.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">Article</p>
-                  <p class="text-[#0e1a13] text-base font-bold leading-tight">The Future of Military Protective Equipment</p>
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">
-                    An in-depth look at the latest trends and innovations in military protective equipment, including advancements in materials, design, and technology.
-                  </p>
-                </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
                 <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnaakoZ_xfD_DHD42e3Gk93aK3eGSP5SfcYU5aHzAbzOZprbHbgqOKmbjMW_74sQpgo7CsMjErn_9aZ1zMuFEyBauAmkxJIrxbg6LI4wpHe_1TpLA3RclZyDnp8CRMG9OMcewyh4LIqeIuUY2CO5yMk6gupWYIFxAk4IYweObRjdxF_dkbXU1-UvUIO2jz38jJcM6ZRD27GMyRCdoPTwe2uRvKtLI5Rpfn_dr-Nq4zYMKkxu5usWMz4Ak5hZhuWfnNh0Ixxfg1SzQ");'
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9gh_iVB-rYh6KsHwmxdL8Cm2hYEErjQgbO-DjoJnKwptkgjiyYZJi4U5qg2_P0zYoiMqW0yKyKxyUmKmeLGAlrw8DKuHfWcaVwaSFayH2ndQ_qO8xLml4zREcmP4uRSPdb1SFJLbyzTRWrPUPPyiSgj8TrqLERIgtNrYbgDF8h0ZkxuzZYXMjwvCg0EHhUgHsuSlWxx5mFSb2QFEERabLjr3c2OnVsRJiXYczsmzPzVUAuf-I4NQvafC4dl3VnAF3WPVHQOr0lWM");'
                 ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Company Achievement</p>
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech Awarded Contract for Advanced Radar Systems</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
+                      DefenseTech has been awarded a significant contract to supply advanced radar systems to a key defense client. This contract underscores the company's
+                      commitment to delivering high-quality, reliable solutions that meet the evolving needs of the defense sector.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">Press Release</p>
-                  <p class="text-[#0e1a13] text-base font-bold leading-tight">ShieldTech Awarded Contract for Advanced Body Armor</p>
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">
-                    ShieldTech has been awarded a significant contract to supply advanced body armor to a major military client, further solidifying its position as a trusted
-                    provider of high-quality protective solutions.
-                  </p>
-                </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
                 <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZ9rJXn830nUsXL8gD4EaZuE6lLRgt9IGQ8tf4Z4rxapnXahbIg1P_zchPcXqzxz1fJ4nuZjyfWnOwtj_5UFcnuDNVAexikQoHede4Y4u14K4stsGkRnfXWQ109DSIIF28RSX9u1bDIresO7l0fewzxifMNNG5j5Szt3tKowSZR7nvukUOXyGWAy9hs3_5cK-kPxSIDusn6kmrUthivYhGJi-LFlwIdIJR3XMXe7E6awa-dhnRcddIkPPyYqJhPRvrYNmzjtJ3H00");'
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdcFOTfeJy7oToCJKFyVS9ampULkDICv95Qj4aGx_TuwbSIsThG2LjmTaGAYJiiZ1pB-VPIHttWgDffZVzrbkyyDk91vHANeU8c5qRKjubRBSvOtpACqz8-bFtOcIhUB7h_EQxLWJd4PldDh3hD4HfwJwG9wY42vdY-d9jxajWy5F_GpVABZl7rG4OQaZ56k4lMTdJEsK-gHNtZ0xdI8Fd26XbhOg2dqDpXUdTleWZx3n-fu-8oGdB0EkkmPY3GFfAT4WzvNTgMkA");'
                 ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Product Launch</p>
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech Unveils New Tactical Communication Device</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
+                      DefenseTech today launched its latest tactical communication device, designed to enhance situational awareness and coordination among military personnel. The
+                      device features secure communication channels, real-time data sharing, and ruggedized construction for use in challenging environments.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">Company Announcement</p>
-                  <p class="text-[#0e1a13] text-base font-bold leading-tight">ShieldTech Celebrates 20 Years of Service</p>
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">
-                    ShieldTech proudly celebrates its 20th anniversary, marking two decades of commitment to providing superior protective equipment to military personnel
-                    worldwide.
-                  </p>
-                </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
                 <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARHXsbBdaN20ePKGYitOnR_RFDvZ7ymzex79ZyL22zbrU9GYwoZDyq0OWvH4CSRLl7jrobTfXKo3Q0yCmEHWh39Hemo4vNMtYtBxVuqvuo4zQ5q3VGHoB3nHZ05V8Bj91boroa7VH9wUf1jyfWmz6KagbLzCoi6MtkO4P74uPDfHOTiXExi9P_onIS43ot6W5ChKwUT3R2_U3zGnrwgJSMu3F6cFElrcOhXczL_Nnpjp9DkLCqGSg-97zXon2739f9HGJylXgFEuM");'
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdY-Nv9oFCluASj5zfay16eEBwsafNoxWGMHwJJ_4xYvCBqBekaCyF100QH2fS9qL3WaR_eNUgeu2TavV-6u7Y1iLGUjwp2rLnMuA-mC0WOzMx1p90ND-vqNq1pW8tmTPDz5Yy9PjD6DlnEqd8jYIj293spK0-FK_S0tBMzjVmkPDYQwGOel2IX0iFGKOWLZ8WIyTwfh9BXB0dcSYP29PcXYMUGMd0zP5sCJQL7KP1iKChZKZMmIXEPnQbB2ume0wDtzrJ0xSO03k");'
                 ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Industry Event</p>
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech to Host Military Technology Symposium</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
+                      DefenseTech will host a symposium on military technology, bringing together industry experts, government officials, and military leaders to discuss emerging
+                      trends and challenges in the defense sector. The event will feature keynote speeches, panel discussions, and technology demonstrations.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">Article</p>
-                  <p class="text-[#0e1a13] text-base font-bold leading-tight">Understanding Ballistic Protection Levels</p>
-                  <p class="text-[#51946b] text-sm font-normal leading-normal">
-                    A comprehensive guide to understanding different levels of ballistic protection, helping users make informed decisions about their protective gear needs.
-                  </p>
-                </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBa8n3Rqwh7JrNjXo7pHaHc_zWZMvsPFJXRz7j4a5VaWml7RhaDa96SArK8RMBmfuJoQ4aX-C2-_jlgMxq5XRoGhSq7Qw3NLJaE9LBC-Lu9ILRawY3zzsQUC7PbxfIkmjVug1iBWuWKdF1npv2cKBp80eUwfO5JvTRQawz11lFRHn6aDm9cRZFdYUJg_VOqDE06oswVj8sBsU5u0ussQy7JipyoKd1hxDRhITv46LFCW_55grvLwDpiTm4PptlcqRFqHgoLvIyhiWE");'
-                ></div>
-              </div>
-            </div>
-          </div>
-          <div class="layout-content-container flex flex-col w-[360px]">
-            <h2 class="text-[#0e1a13] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Popular News</h2>
-            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-14">
-              <p class="text-[#0e1a13] text-base font-normal leading-normal flex-1 truncate">ShieldTech Announces New Line of Tactical Gear</p>
-            </div>
-            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-14">
-              <p class="text-[#0e1a13] text-base font-normal leading-normal flex-1 truncate">ShieldTech Expands Manufacturing Capacity</p>
-            </div>
-            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-14">
-              <p class="text-[#0e1a13] text-base font-normal leading-normal flex-1 truncate">The Future of Military Protective Equipment</p>
-            </div>
-            <h2 class="text-[#0e1a13] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">News Archive</h2>
-            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-14"><p class="text-[#0e1a13] text-base font-normal leading-normal flex-1 truncate">2022</p></div>
-            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-14"><p class="text-[#0e1a13] text-base font-normal leading-normal flex-1 truncate">2021</p></div>
-            <div class="flex items-center gap-4 bg-[#f8fbfa] px-4 min-h-14"><p class="text-[#0e1a13] text-base font-normal leading-normal flex-1 truncate">2020</p></div>
           </div>
         </div>
       </div>
