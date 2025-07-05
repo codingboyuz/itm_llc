@@ -16,4 +16,3 @@ class HomePage(View):
         except Exception as e:
             logger.error(f"Home sahifasida xatolik: {str(e)}")
             return render(request, "error.html", {"message": "Noma'lum xatolik yuz berdi."})
-
