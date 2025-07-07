@@ -46,10 +46,10 @@ from django.core.paginator import Paginator
 from django.shortcuts import render
 from .models import ProductModel
 
-class ProductsPage(View):
+class ProductsView(View):
     def get(self, request):
         data = ProductModel.objects.all().order_by('id')
-        product = list(data) * 100
+        # product = list(data) * 100
 
         search_query = request.GET.get('q')
         if search_query:
@@ -57,7 +57,7 @@ class ProductsPage(View):
             product = list(data)
 
         page_size = int(request.GET.get('page_size', 10))
-        paginator = Paginator(product, page_size)
+        paginator = Paginator(data, page_size)
 
         page_num = request.GET.get('page', 1)
         pages = paginator.get_page(page_num)
@@ -78,3 +78,13 @@ class ProductsPage(View):
         }
         return render(request, 'products.html', context)
 
+
+
+class ProductsDetailView(View):
+    def get(self, request, pk):
+        product = ProductModel.objects.all().get(pk=pk)
+
+        context = {
+            'product': product,
+        }
+        return render(request, 'product_detail.html', context)

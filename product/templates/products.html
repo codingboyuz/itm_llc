@@ -1,109 +1,110 @@
+{%extends 'base.html' %}
+{%block content %}
 
-{% extends 'base.html' %} 
-{% block content %}
-<div class="relative flex size-full min-h-screen flex-col bg-[#131612] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
-  <div class="layout-container flex h-full grow flex-col">
-    <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
-      <div class="layout-content-container flex flex-col w-full max-w-[960px]">
-        <div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="relative flex size-full min-h-screen flex-col bg-[#131612] dark group/design-root overflow-x-hidden"
+     style='font-family: Manrope, "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+        <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col w-full max-w-[960px]">
+                <div class="flex flex-wrap justify-between gap-3 p-4">
 
-          <div class="flex min-w-72 flex-col gap-3">
-            <p class="text-white tracking-light text-[32px] font-bold leading-tight">Products</p>
-          </div>
+                    <div class="flex min-w-72 flex-col gap-3">
+                        <p class="text-white tracking-light text-[32px] font-bold leading-tight">Products</p>
+                    </div>
 
-        </div>
+                </div>
 
-        <div class="flex gap-3 px-3 flex-wrap pr-4">
-          <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
-            <p class="text-white text-sm font-medium leading-normal">All Products</p>
-          </div>
-          <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
-            <p class="text-white text-sm font-medium leading-normal">Vehicles</p>
-          </div>
-          <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
-            <p class="text-white text-sm font-medium leading-normal">Communication Systems</p>
-          </div>
-          <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
-            <p class="text-white text-sm font-medium leading-normal">Protective Gear</p>
-          </div>
-        </div>
+                <div class="flex gap-3 px-3 flex-wrap pr-4">
+                    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
+                        <p class="text-white text-sm font-medium leading-normal">All Products</p>
+                    </div>
+                    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
+                        <p class="text-white text-sm font-medium leading-normal">Vehicles</p>
+                    </div>
+                    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
+                        <p class="text-white text-sm font-medium leading-normal">Communication Systems</p>
+                    </div>
+                    <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
+                        <p class="text-white text-sm font-medium leading-normal">Protective Gear</p>
+                    </div>
+                </div>
 
-        <!-- 📱 Grid: 2 ustun mobil, avtomatik ustunlar md dan katta -->
-        <div class="grid grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-          {% for item in pages.object_list %}
-          <div class="flex flex-col gap-3 pb-3">
-            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                 style='background-image: url("{{ item.image.url }}");'>
-            </div>
-            <div>
-              <p class="text-white text-base font-medium leading-normal">{{ item.name }}</p>
-              <p class="text-[#a6b3a2] text-sm font-normal leading-normal">
-                {{ item.description|truncatewords:5 }}
-              </p>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
+                <!-- 📱 Grid: 2 ustun mobil, avtomatik ustunlar md dan katta -->
+                <div class="grid grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+                    {% for item in pages.object_list %}
+                    <a href="{% url 'product_detail' item.id %}"
+                       class="flex flex-col gap-3 pb-3 hover:opacity-80 transition">
+                        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                             style='background-image: url("{{ item.image.url }}");'>
+                        </div>
+                        <div>
+                            <p class="text-white text-base font-medium leading-normal">{{ item.name }}</p>
+                            <p class="text-[#a6b3a2] text-sm font-normal leading-normal">
+                                {{ item.description|truncatewords:5 }}
+                            </p>
+                        </div>
+                    </a>
+                    {% endfor %}
+
+                </div>
 
 
-        <nav class="flex justify-center mt-6">
-          <ul class="inline-flex items-center gap-1 text-sm">
-            {% if pages.has_previous %}
-              <li>
-                <a href="?page=1"
-                   class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 rounded-l-lg hover:bg-[#3a4437] hover:text-white">
-                  « First
-                </a>
-              </li>
-              <li>
-                <a href="?page={{ pages.previous_page_number }}"
-                   class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 hover:bg-[#3a4437] hover:text-white">
-                  ‹ Prev
-                </a>
-              </li>
-            {% endif %}
-        
-            {% for page in page_range %}
-              {% if page == '…' %}
-                <li><span class="px-3 py-2 text-gray-500">…</span></li>
-              {% elif page == pages.number %}
-                <li>
+                <nav class="flex justify-center mt-6">
+                    <ul class="inline-flex items-center gap-1 text-sm">
+                        {% if pages.has_previous %}
+                        <li>
+                            <a href="?page=1"
+                               class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 rounded-l-lg hover:bg-[#3a4437] hover:text-white">
+                                « First
+                            </a>
+                        </li>
+                        <li>
+                            <a href="?page={{ pages.previous_page_number }}"
+                               class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 hover:bg-[#3a4437] hover:text-white">
+                                ‹ Prev
+                            </a>
+                        </li>
+                        {% endif %}
+
+                        {% for page in page_range %}
+                        {% if page == '…' %}
+                        <li><span class="px-3 py-2 text-gray-500">…</span></li>
+                        {% elif page == pages.number %}
+                        <li>
                   <span class="px-3 py-2 text-white bg-[#53d22c] border border-gray-700 font-semibold">
                     {{ page }}
                   </span>
-                </li>
-              {% else %}
-                <li>
-                  <a href="?page={{ page }}"
-                     class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 hover:bg-[#3a4437] hover:text-white">
-                    {{ page }}
-                  </a>
-                </li>
-              {% endif %}
-            {% endfor %}
-        
-            {% if pages.has_next %}
-              <li>
-                <a href="?page={{ pages.next_page_number }}"
-                   class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 hover:bg-[#3a4437] hover:text-white">
-                  Next ›
-                </a>
-              </li>
-              <li>
-                <a href="?page={{ pages.paginator.num_pages }}"
-                   class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 rounded-r-lg hover:bg-[#3a4437] hover:text-white">
-                  Last »
-                </a>
-              </li>
-            {% endif %}
-          </ul>
-        </nav>
-        
-        
+                        </li>
+                        {% else %}
+                        <li>
+                            <a href="?page={{ page }}"
+                               class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 hover:bg-[#3a4437] hover:text-white">
+                                {{ page }}
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+
+                        {% if pages.has_next %}
+                        <li>
+                            <a href="?page={{ pages.next_page_number }}"
+                               class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 hover:bg-[#3a4437] hover:text-white">
+                                Next ›
+                            </a>
+                        </li>
+                        <li>
+                            <a href="?page={{ pages.paginator.num_pages }}"
+                               class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 rounded-r-lg hover:bg-[#3a4437] hover:text-white">
+                                Last »
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
 
 
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-{% endblock content %}
+{%endblock content %}
