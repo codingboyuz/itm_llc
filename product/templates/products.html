@@ -34,9 +34,18 @@
                     {% for item in pages.object_list %}
                     <a href="{% url 'product_detail' item.id %}"
                        class="flex flex-col gap-3 pb-3 hover:opacity-80 transition">
+                        {% with item.images.first as first_image %}
+                        {% if first_image %}
                         <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
-                             style='background-image: url("{{ item.image.url }}");'>
+                             style='background-image: url("{{ first_image.image.url }}");'>
                         </div>
+                        {% else %}
+                        <div class="w-full bg-[#2e352c] aspect-square rounded-xl flex items-center justify-center">
+                            <p class="text-white text-sm">No image</p>
+                        </div>
+                        {% endif %}
+                        {% endwith %}
+
                         <div>
                             <p class="text-white text-base font-medium leading-normal">{{ item.name }}</p>
                             <p class="text-[#a6b3a2] text-sm font-normal leading-normal">

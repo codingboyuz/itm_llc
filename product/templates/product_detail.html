@@ -6,7 +6,7 @@
     <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
 
         <div class="flex flex-wrap gap-2 p-4">
-            <a class="text-[#a6b3a2] text-base font-medium leading-normal" href="#">Products</a>
+            <a class="text-[#a6b3a2] text-base font-medium leading-normal" href="{% url 'products' %}">Products</a>
             <span class="text-[#a6b3a2] text-base font-medium leading-normal">/</span>
             <span class="text-white text-base font-medium leading-normal">{{ product.name }}</span>
         </div>
@@ -20,57 +20,40 @@
 
         <div class="flex w-full grow bg-[#131612] @container p-4">
             <div class="w-full gap-1 overflow-hidden bg-[#131612] @[480px]:gap-2 aspect-[3/2] rounded-xl grid grid-cols-[2fr_1fr_1fr]">
+                {% for img in images %}
                 <div class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none row-span-2"
-                     style='background-image: url("{{ product.image.url }}");'>
+                     style='background-image: url("{{ img.image.url }}");'>
                 </div>
+                {% empty %}
+                <p>No images available.</p>
+                {% endfor %}
                 <!-- Istasangiz qo'shimcha rasmlar ham kiritishingiz mumkin -->
             </div>
         </div>
 
-        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Specifications</h2>
+        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+            Specifications</h2>
         <div class="p-4 grid grid-cols-2">
+            {% for field in fields %}
             <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pr-2">
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Caliber</p>
-                <p class="text-white text-sm font-normal leading-normal">{{ product.caliber }}</p>
+                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">{{ field.key }}</p>
+                <p class="text-white text-sm font-normal leading-normal">{{ field.value }}</p>
             </div>
-            <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pl-2">
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Weight</p>
-                <p class="text-white text-sm font-normal leading-normal">{{ product.weight }}</p>
-            </div>
-            <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pr-2">
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Length</p>
-                <p class="text-white text-sm font-normal leading-normal">{{ product.length }}</p>
-            </div>
-            <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pl-2">
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Rate of Fire</p>
-                <p class="text-white text-sm font-normal leading-normal">{{ product.rate_of_fire }}</p>
-            </div>
-            <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pr-2">
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Effective Range</p>
-                <p class="text-white text-sm font-normal leading-normal">{{ product.effective_range }}</p>
-            </div>
-            <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pl-2">
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Magazine Capacity</p>
-                <p class="text-white text-sm font-normal leading-normal">{{ product.magazine_capacity }}</p>
-            </div>
-            <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pr-2">
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Operating System</p>
-                <p class="text-white text-sm font-normal leading-normal">{{ product.operating_system }}</p>
-            </div>
-            <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pl-2">
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Safety Features</p>
-                <p class="text-white text-sm font-normal leading-normal">{{ product.safety_features }}</p>
-            </div>
+
+
+            {% endfor %}
+
         </div>
 
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Features</h2>
-        <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">{{ product.features }}</p>
+        <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nostrum.</p>
 
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Benefits</h2>
-        <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">{{ product.benefits }}</p>
+        <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nostrum.</p>
 
-        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Technical Information</h2>
-        <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">{{ product.technical_info }}</p>
+        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Technical
+            Information</h2>
+        <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nostrum.</p>
     </div>
 </div>
 
