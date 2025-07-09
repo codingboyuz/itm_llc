@@ -1,37 +1,7 @@
-# from django.contrib import admin
-# from django.contrib import admin
-# from django.utils.html import format_html
-# from .models import ProductModel
-#
-#
-#
-# @admin.register(ProductModel)
-# class ProductModelAdmin(admin.ModelAdmin):
-#     list_display = ('id', 'name', 'description', 'category','image','created_at')
-#     list_display_links = ('id', 'name')
-#     search_fields = ('name', 'category')
-#     list_filter = ('name',)
-#     readonly_fields = ('image_preview',)
-#
-#     fieldsets = (
-#         (None, {
-#             'fields': ( 'name', 'description', 'category')
-#         }),
-#         ('Image', {
-#             'fields': ('image', 'image_preview'),
-#         }),
-#     )
-#
-#     def image_preview(self, obj):
-#         if obj.image and hasattr(obj.image, 'url'):
-#             return format_html('<img src="{}" style="max-height: 100px;" />', obj.image.url)
-#         return "-"
-#
-#
-#     image_preview.short_description = 'Image Preview'
 #
 from django.contrib import admin
-from .models import ProductModel, ProductImage, ProductField
+from .models import ProductModel, ProductImage, ProductField,ProductCategory
+
 
 
 class ProductImageInline(admin.TabularInline):
@@ -42,9 +12,15 @@ class ProductImageInline(admin.TabularInline):
 class ProductFieldInline(admin.TabularInline):
     model = ProductField
     extra = 1
-
+    fields = ()  # Avtomatik maydonlarni o'chirib qo'yamiz
+    verbose_name_plural = "Product Fields"
 
 @admin.register(ProductModel)
 class ProductModelAdmin(admin.ModelAdmin):
     list_display = ['name', 'category', 'created_at']
     inlines = [ProductImageInline, ProductFieldInline]
+
+
+@admin.register(ProductCategory)
+class ProductModelAdmin(admin.ModelAdmin):
+    list_display = ['name', 'verbose_name']

@@ -1,3 +1,6 @@
+{% load static %}
+{% load i18n %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -29,13 +32,29 @@
               </div>
               <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"><a href="{% url 'home' %}">ITM-LLC</a>  </h2>
             </div>
+
+
             <div class="flex flex-1 justify-end gap-8">
               <div class="flex items-center gap-9">
-                <a class="text-white text-sm font-medium leading-normal" href="{% url 'products' %}">Products</a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">Services</a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">About</a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">News</a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">Careers</a>
+                <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                  <input name="next" type="hidden" value="{{ redirect_to }}">
+                  <select name="language">
+                      {% get_current_language as LANGUAGE_CODE %}
+                      {% get_available_languages as LANGUAGES %}
+                      {% get_language_info_list for LANGUAGES as languages %}
+                      {% for language in languages %}
+                          <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                              {{ language.name_local }} ({{ language.code }})
+                          </option>
+                      {% endfor %}
+                  </select>
+                  <input type="submit" value="Go">
+              </form>
+                <a class="text-white text-sm font-medium leading-normal" href="{% url 'products' %}"> {% blocktrans %}Products{% endblocktrans %} </a>
+                <a class="text-white text-sm font-medium leading-normal" href="#"> {% blocktrans %} Services {% endblocktrans %} </a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %} About{% endblocktrans %}</a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %}News{% endblocktrans %}</a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %}Careers{% endblocktrans %}</a>
               </div>
               <button
                 class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#53d22c] text-[#131712] text-sm font-bold leading-normal tracking-[0.015em]"
@@ -57,6 +76,10 @@
           </footer>
         </div>
       </footer>
+      {% block scripts %}
+<script src="{% static 'js/gallery.js' %}"></script>
+{% endblock %}
+
 </body>
 
 

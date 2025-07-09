@@ -7,8 +7,6 @@ __pycache__/
 .venv/
 
 # Django static/media
-static/
-media/
 
 # VSCode
 .vscode/
