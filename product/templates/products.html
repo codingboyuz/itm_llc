@@ -1,5 +1,6 @@
-{%extends 'base.html' %}
-{%block content %}
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
 
 <div class="relative flex size-full min-h-screen flex-col bg-[#131612] dark group/design-root overflow-x-hidden"
      style='font-family: Manrope, "Noto Sans", sans-serif;'>
@@ -9,23 +10,23 @@
                 <div class="flex flex-wrap justify-between gap-3 p-4">
 
                     <div class="flex min-w-72 flex-col gap-3">
-                        <p class="text-white tracking-light text-[32px] font-bold leading-tight">Products</p>
+                        <p class="text-white tracking-light text-[32px] font-bold leading-tight"> {% blocktrans %} Products {% endblocktrans %} </p>
                     </div>
 
                 </div>
 
                 <div class="flex gap-3 px-3 flex-wrap pr-4">
                     <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
-                        <p class="text-white text-sm font-medium leading-normal">All Products</p>
+                        <p class="text-white text-sm font-medium leading-normal">{% blocktrans %}All Products{% endblocktrans %}</p>
                     </div>
                     <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
-                        <p class="text-white text-sm font-medium leading-normal">Vehicles</p>
+                        <p class="text-white text-sm font-medium leading-normal">{% blocktrans %}Vehicles{% endblocktrans %}</p>
                     </div>
                     <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
-                        <p class="text-white text-sm font-medium leading-normal">Communication Systems</p>
+                        <p class="text-white text-sm font-medium leading-normal">{% blocktrans %}Communication Systems{% endblocktrans %}</p>
                     </div>
                     <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#2e352c] px-4">
-                        <p class="text-white text-sm font-medium leading-normal">Protective Gear</p>
+                        <p class="text-white text-sm font-medium leading-normal">{% blocktrans %}Protective Gear{% endblocktrans %}</p>
                     </div>
                 </div>
 
@@ -41,7 +42,7 @@
                         </div>
                         {% else %}
                         <div class="w-full bg-[#2e352c] aspect-square rounded-xl flex items-center justify-center">
-                            <p class="text-white text-sm">No image</p>
+                            <p class="text-white text-sm">{% blocktrans %}No image{% endblocktrans %}</p>
                         </div>
                         {% endif %}
                         {% endwith %}
@@ -64,13 +65,13 @@
                         <li>
                             <a href="?page=1"
                                class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 rounded-l-lg hover:bg-[#3a4437] hover:text-white">
-                                « First
+                                « {% blocktrans %}First{% endblocktrans %}
                             </a>
                         </li>
                         <li>
                             <a href="?page={{ pages.previous_page_number }}"
                                class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 hover:bg-[#3a4437] hover:text-white">
-                                ‹ Prev
+                                ‹ {% blocktrans %}Prev{% endblocktrans %}
                             </a>
                         </li>
                         {% endif %}
@@ -98,13 +99,13 @@
                         <li>
                             <a href="?page={{ pages.next_page_number }}"
                                class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 hover:bg-[#3a4437] hover:text-white">
-                                Next ›
+                                {% blocktrans %}Next{% endblocktrans %} ›
                             </a>
                         </li>
                         <li>
                             <a href="?page={{ pages.paginator.num_pages }}"
                                class="px-3 py-2 leading-tight text-gray-400 bg-[#2e352c] border border-gray-700 rounded-r-lg hover:bg-[#3a4437] hover:text-white">
-                                Last »
+                                {% blocktrans %}Last{% endblocktrans %} »
                             </a>
                         </li>
                         {% endif %}
@@ -116,4 +117,4 @@
         </div>
     </div>
 </div>
-{%endblock content %}
+{% endblock content %}

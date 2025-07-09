@@ -2,22 +2,32 @@
 {% load i18n %}
 
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-        <link
-          rel="stylesheet"
-          as="style"
-          onload="this.rel='stylesheet'"
-          href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-        />
-    
-        <title c=>ITM-LLC</title>
-        <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-    
-        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-      </head>
-    
+<html lang="{{ LANGUAGE_CODE|default:'en' }}">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>ITM-LLC</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        .language-selector {
+            min-width: 120px;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+        .language-selector option {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
 
 <body>
     <div class="relative flex size-full min-h-screen flex-col bg-[#131712] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
@@ -30,60 +40,72 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
                 </svg>
               </div>
-              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"><a href="{% url 'home' %}">ITM-LLC</a>  </h2>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"><a href="{% url 'home' %}">ITM-LLC</a></h2>
             </div>
-
 
             <div class="flex flex-1 justify-end gap-8">
+              
+              
               <div class="flex items-center gap-9">
-                <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-                  <input name="next" type="hidden" value="{{ redirect_to }}">
-                  <select name="language">
-                      {% get_current_language as LANGUAGE_CODE %}
-                      {% get_available_languages as LANGUAGES %}
-                      {% get_language_info_list for LANGUAGES as languages %}
-                      {% for language in languages %}
-                          <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                              {{ language.name_local }} ({{ language.code }})
-                          </option>
-                      {% endfor %}
-                  </select>
-                  <input type="submit" value="Go">
-              </form>
-                <a class="text-white text-sm font-medium leading-normal" href="{% url 'products' %}"> {% blocktrans %}Products{% endblocktrans %} </a>
-                <a class="text-white text-sm font-medium leading-normal" href="#"> {% blocktrans %} Services {% endblocktrans %} </a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %} About{% endblocktrans %}</a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %}News{% endblocktrans %}</a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %}Careers{% endblocktrans %}</a>
+                <a class="text-white text-sm font-medium leading-normal" href="{% url 'products' %}"> {% blocktrans %} Products {% endblocktrans %} </a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %} Services  {% endblocktrans %} </a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans  %} About  {% endblocktrans %} </a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %} News {% endblocktrans %} </a>
+                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %}Careers {% endblocktrans %}</a>
               </div>
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#53d22c] text-[#131712] text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">Contact Us</span>
-              </button>
+              
+              <form action="{% url 'set_language' %}" method="post" id="languageForm" class="relative">
+                {% csrf_token %}
+                <input type="hidden" name="next" value="{{ request.get_full_path }}">
+            
+                <select name="language"
+                    class="language-selector bg-[#1f261f] border border-[#2d372a] text-white text-base py-2 pl-10 pr-9 rounded-md focus:outline-none appearance-none"
+                    onchange="document.getElementById('languageForm').submit();">
+            
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    {% for language in languages %}
+                        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}
+                                class="text-base p-2">
+
+                            {% if language.code == "uz" %}O'zbekcha
+                            {% elif language.code == "ru" %}Русский
+                            {% elif language.code == "en" %}English
+
+                            {% else %}{{ language.name_local }}
+                            {% endif %}
+                        </option>
+                    {% endfor %}
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2">
+                    <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                    </svg>
+                </div>
+              </form>
             </div>
           </header>
-    {% block content %}
-    {% endblock content %}
-    <footer class="flex justify-center">
-        <div class="flex max-w-[960px] flex-1 flex-col">
-          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-            <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-              <a class="text-[#a5b6a0] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-              <a class="text-[#a5b6a0] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+          
+          {% block content %}
+          {% endblock content %}
+          
+          <footer class="flex justify-center">
+            <div class="flex max-w-[960px] flex-1 flex-col">
+              <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+                <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                  <a class="text-[#a5b6a0] text-base font-normal leading-normal min-w-40" href="#">{% blocktrans %} Privacy Policy {% endblocktrans %}</a>
+                  <a class="text-[#a5b6a0] text-base font-normal leading-normal min-w-40" href="#">{% blocktrans %} Terms of Service {% endblocktrans %}</a>
+                </div>
+                <p class="text-[#a5b6a0] text-base font-normal leading-normal">© {% now "Y" %} ITM-LLC. {% blocktrans %}All rights reserved.{% endblocktrans %}</p>
+              </footer>
             </div>
-            <p class="text-[#a5b6a0] text-base font-normal leading-normal">© 2024 DefenseTech. All rights reserved.</p>
           </footer>
+          
+          {% block scripts %}
+          <script src="{% static 'js/gallery.js' %}"></script>
+          {% endblock %}
         </div>
-      </footer>
-      {% block scripts %}
-<script src="{% static 'js/gallery.js' %}"></script>
-{% endblock %}
-
+    </div>
 </body>
-
-
-
-
-
-
+</html>

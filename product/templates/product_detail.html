@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load i18n %}
 {% block content %}
 
 <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
@@ -7,7 +7,7 @@
 
         <!-- Breadcrumb -->
         <div class="flex flex-wrap gap-2 p-4">
-            <a class="text-[#a6b3a2] text-base font-medium leading-normal" href="{% url 'products' %}">Products</a>
+            <a class="text-[#a6b3a2] text-base font-medium leading-normal" href="{% url 'products' %}"> {% blocktrans %} Products {% endblocktrans %}</a>
             <span class="text-[#a6b3a2] text-base font-medium leading-normal">/</span>
             <span class="text-white text-base font-medium leading-normal">{{ product.name }}</span>
         </div>
@@ -43,7 +43,7 @@
 
         <!-- Specifications -->
         <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-            Specifications</h2>
+            {% blocktrans %} Specifications {% endblocktrans %} </h2>
         <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
             {% for field in fields %}
             <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pr-2">

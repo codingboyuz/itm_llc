@@ -3,54 +3,157 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-09 17:55+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2025-07-09 19:08+0500\n"
+"PO-Revision-Date: 2025-07-09 19:10+0500\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: Russian <LL@li.org>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
 #: .\core\settings.py:127
 msgid "Uzbek"
-msgstr ""
+msgstr "Узбекский"
 
 #: .\core\settings.py:128
 msgid "English"
-msgstr ""
+msgstr "Английский"
 
 #: .\core\settings.py:129
 msgid "Russian"
-msgstr ""
+msgstr "Русский"
+
+#: .\home\templates\home.html:29
+msgid "Explore Products"
+msgstr "Исследовать продукты"
+
+#: .\home\templates\home.html:34
+msgid "Learn More"
+msgstr "Узнать больше"
+
+#: .\home\templates\home.html:40
+msgid "About Us"
+msgstr "О нас"
+
+#: .\home\templates\home.html:44
+msgid "Featured Products"
+msgstr "Рекомендуемые продукты"
+
+#: .\home\templates\home.html:101
+msgid "Our Partners"
+msgstr "Наши партнеры"
 
 #: .\product\models.py:11
 msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#: .\product\templates\product_detail.html:10
+#: .\product\templates\products.html:12 .\templates\base.html:50
+msgid " Products "
+msgstr " Продукты "
+
+#: .\product\templates\product_detail.html:46
+msgid " Specifications "
+msgstr " Характеристики "
+
+#: .\product\templates\products.html:19
+msgid "All Products"
+msgstr "Все продукты"
+
+#: .\product\templates\products.html:22
+msgid "Vehicles"
+msgstr "Транспортные средства"
+
+#: .\product\templates\products.html:25
+msgid "Communication Systems"
+msgstr "Системы связи"
+
+#: .\product\templates\products.html:28
+msgid "Protective Gear"
+msgstr "Защитное снаряжение"
+
+#: .\product\templates\products.html:44
+msgid "No image"
+msgstr "Нет изображения"
+
+#: .\product\templates\products.html:67
+msgid "First"
+msgstr "Первый"
+
+#: .\product\templates\products.html:73
+msgid "Prev"
+msgstr "Назад"
+
+#: .\product\templates\products.html:101
+msgid "Next"
+msgstr "Следующий"
+
+#: .\product\templates\products.html:107
+msgid "Last"
+msgstr "Последний"
+
+#: .\templates\404.html:6
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: .\templates\404.html:7
+msgid ""
+"\n"
+"        The page you are looking for might have been removed, had its name "
+"changed, or is temporarily unavailable. "
 msgstr ""
+"\n"
+"        Страница, которую вы ищете, возможно, была удалена, переименована или временно недоступна. "
+
+#: .\templates\base.html:51
+msgid " Services  "
+msgstr " Услуги "
+
+#: .\templates\base.html:52
+msgid " About  "
+msgstr " О нас "
 
 #: .\templates\base.html:53
-msgid "Products"
-msgstr ""
+msgid " News "
+msgstr " Новости "
 
 #: .\templates\base.html:54
-msgid " Services "
-msgstr ""
+msgid "Careers "
+msgstr "Вакансии"
 
-#: .\templates\base.html:55
-msgid " About"
-msgstr ""
+#: .\templates\base.html:95
+msgid " Privacy Policy "
+msgstr " Политика конфиденциальности "
 
-#: .\templates\base.html:56
-msgid "News"
-msgstr ""
+#: .\templates\base.html:96
+msgid " Terms of Service "
+msgstr " Условия обслуживания "
 
-#: .\templates\base.html:57
-msgid "Careers"
+#: .\templates\base.html:98
+msgid "All rights reserved."
+msgstr "Все права защищены."
+
+#: .\templates\error.html:14
+msgid "  Oops! Something went wrong. "
+msgstr " Упс! Что-то пошло не так. "
+
+#: .\templates\error.html:15
+msgid ""
+" \n"
+"                    We encountered an unexpected issue. Please try again "
+"later or contact our support team for assistance.\n"
+"                    "
 msgstr ""
+" \n"
+"                    Возникла непредвиденная ошибка. Пожалуйста, попробуйте позже или свяжитесь с нашей службой поддержки.\n"
+"                    "
+
+#: .\templates\error.html:23
+msgid " Contact Support "
+msgstr " Связаться с поддержкой "
