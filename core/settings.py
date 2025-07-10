@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "home",
     'product.apps.ProductConfig', 
     "news",
+    'about.apps.AboutConfig',
 ]
 
 MIDDLEWARE = [

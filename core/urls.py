@@ -23,6 +23,7 @@ urlpatterns += i18n_patterns(
     path('i18n/',include('django.conf.urls.i18n')),
     path('', include('home.urls'),), 
     path('', include('product.urls'),),  
+    path('', include('about.urls'),),  
 )
 urlpatterns+=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT )
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

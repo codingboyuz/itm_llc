@@ -22,5 +22,5 @@ class ProductModelAdmin(admin.ModelAdmin):
 
 
 @admin.register(ProductCategory)
-class ProductModelAdmin(admin.ModelAdmin):
+class ProductCategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'verbose_name']

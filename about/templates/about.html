@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<div class="container mx-auto p-6 text-white">
+  <div class="flex min-w-72 flex-col gap-3">
+    <p class="text-white tracking-light text-[32px] font-bold leading-tight"> {% blocktrans %} About {% endblocktrans %} </p>
+</div>
+  {% for about in data %}
+    <div class="mb-10 border border-gray-700 rounded-lg shadow-lg p-6 bg-[#1f1f1f]">
+      <h2 class="text-2xl font-bold mb-4 border-b border-gray-600 pb-2">{{ about.title }}</h2>
+
+      {% if about.video %}
+        <div class="mb-4 rounded overflow-hidden border border-gray-700">
+          <video width="100%" height="auto" controls class="w-full h-auto">
+            <source src="{{ about.video.url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      {% endif %}
+
+      <p class="mb-4 text-base leading-relaxed text-gray-300">{{ about.description }}</p>
+  {% endfor %}
+</div>
+
+<div class="container mx-auto px-6 pb-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    {% for img in images %}
+      <div class="rounded overflow-hidden border border-gray-700 shadow-md">
+        <img src="{{ img.image.url }}" alt="About image" class="w-full h-auto object-cover">
+      </div>
+    {% endfor %}
+  </div>
+  <hr class="my-8 border-gray-600">
+</div>
+{% endblock %}
