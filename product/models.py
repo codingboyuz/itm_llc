@@ -3,7 +3,7 @@
 
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-
+from shared.models import BaseModel
 
 
 class ProductCategory(models.Model):
@@ -13,7 +13,7 @@ class ProductCategory(models.Model):
     def __str__(self):
         return self.verbose_name
 
-class ProductModel(models.Model):
+class ProductModel(BaseModel):
     name = models.CharField(max_length=300)
     description = models.TextField()
     category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE)

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'product.apps.ProductConfig', 
     "news",
     'about.apps.AboutConfig',
+    'shared'
 ]
 
 MIDDLEWARE = [

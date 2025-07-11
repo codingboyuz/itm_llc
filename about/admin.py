@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 
-from .models import AboutImage,AboutModel
+from .models import AboutImage,AboutModel,CertificateModel
 
 
 class AboutImageInline(admin.TabularInline):
@@ -13,3 +13,8 @@ class AboutImageInline(admin.TabularInline):
 class AboutModelAdmin(admin.ModelAdmin):
     list_display= ['title','description','video']
     inlines = [AboutImageInline]
+
+
+@admin.register(CertificateModel)
+class CertificateModelAdmin(admin.ModelAdmin):
+    list_display= ['image']

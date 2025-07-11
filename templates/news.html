@@ -1,141 +1,34 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
+{% extends "base.html" %}
 
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+{% block content %}
+<div class="px-40 flex flex-1 justify-center py-5">
+  <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+    <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">News</p></div>
+    
+    
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#131612] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2e352c] px-10 py-3">
-          <div class="flex items-center gap-4 text-white">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
-              </svg>
-            </div>
-            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-white text-sm font-medium leading-normal" href="#">Products</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Services</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">News</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Careers</a>
-              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
-            </div>
-            <button
-              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#2e352c] text-white text-sm font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">My Account</span>
-            </button>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">News</p></div>
-            <div class="p-4 @container">
-              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSWGDkL8lqHCRAQQuezJCG2SodCp3S9INs9UuFS_iv8k8zTLA6owy6_YwfW1-YWC4uZxrPCx24Hyz4-JDolxZVOdVVN0pgc_YfRqG7rV7L4O3XRCLBnck6bsHvQ1eH-HzARMeCitnJV-sMBOJP2Rsl2qRJGu37vzazB2iUQ1gCTZrBNaEJGRfREj4CN2qQCf6th_ul_T1ZegfmVyWiJ8P1tnGoXNFNLC0LfliP-v2QYjQi5m0CNsFT-Ifwufxg0b1dVF7wIhYNtZM");'
-                ></div>
-                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Press Release</p>
-                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech Announces Strategic Partnership with Global Aerospace Innovators</p>
-                  <div class="flex items-end gap-3 justify-between">
-                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
-                      DefenseTech, a leading provider of advanced defense solutions, today announced a strategic partnership with Global Aerospace Innovators, a renowned aerospace
-                      technology company. This collaboration aims to integrate cutting-edge technologies and expertise to develop next-generation defense systems.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 @container">
-              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC147tEVzrg571SEj46-79V33WejPBjDM6HEfaaIlx2eGfAKWqeRGi8ZyXJDL5xUQWMiEFa7fipzUb1DinF418lkXNo8EET7K6unJ7MG510iodRN6f9jZaLoR--ple5V1QTjU7iT5Nj6SEyCtz3f4HalO_ZY4uAZ8o9gLJ48wEHwwyrjEtjbsEYu9XlepteIcB99VDNdGR7W0FjZNPt9Hg78GLl2-o7OpBGQWYh7t6ghH89qBGV_5-1mACOTimqbqh34tqPPdAgvHQ");'
-                ></div>
-                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Industry Update</p>
-                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech Showcases Latest Innovations at International Defense Expo</p>
-                  <div class="flex items-end gap-3 justify-between">
-                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
-                      DefenseTech recently participated in the International Defense Expo, showcasing its latest advancements in military technology. The company's exhibit featured
-                      a range of innovative products, including unmanned aerial vehicles, advanced communication systems, and precision-guided munitions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 @container">
-              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9gh_iVB-rYh6KsHwmxdL8Cm2hYEErjQgbO-DjoJnKwptkgjiyYZJi4U5qg2_P0zYoiMqW0yKyKxyUmKmeLGAlrw8DKuHfWcaVwaSFayH2ndQ_qO8xLml4zREcmP4uRSPdb1SFJLbyzTRWrPUPPyiSgj8TrqLERIgtNrYbgDF8h0ZkxuzZYXMjwvCg0EHhUgHsuSlWxx5mFSb2QFEERabLjr3c2OnVsRJiXYczsmzPzVUAuf-I4NQvafC4dl3VnAF3WPVHQOr0lWM");'
-                ></div>
-                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Company Achievement</p>
-                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech Awarded Contract for Advanced Radar Systems</p>
-                  <div class="flex items-end gap-3 justify-between">
-                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
-                      DefenseTech has been awarded a significant contract to supply advanced radar systems to a key defense client. This contract underscores the company's
-                      commitment to delivering high-quality, reliable solutions that meet the evolving needs of the defense sector.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 @container">
-              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdcFOTfeJy7oToCJKFyVS9ampULkDICv95Qj4aGx_TuwbSIsThG2LjmTaGAYJiiZ1pB-VPIHttWgDffZVzrbkyyDk91vHANeU8c5qRKjubRBSvOtpACqz8-bFtOcIhUB7h_EQxLWJd4PldDh3hD4HfwJwG9wY42vdY-d9jxajWy5F_GpVABZl7rG4OQaZ56k4lMTdJEsK-gHNtZ0xdI8Fd26XbhOg2dqDpXUdTleWZx3n-fu-8oGdB0EkkmPY3GFfAT4WzvNTgMkA");'
-                ></div>
-                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Product Launch</p>
-                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech Unveils New Tactical Communication Device</p>
-                  <div class="flex items-end gap-3 justify-between">
-                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
-                      DefenseTech today launched its latest tactical communication device, designed to enhance situational awareness and coordination among military personnel. The
-                      device features secure communication channels, real-time data sharing, and ruggedized construction for use in challenging environments.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 @container">
-              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdY-Nv9oFCluASj5zfay16eEBwsafNoxWGMHwJJ_4xYvCBqBekaCyF100QH2fS9qL3WaR_eNUgeu2TavV-6u7Y1iLGUjwp2rLnMuA-mC0WOzMx1p90ND-vqNq1pW8tmTPDz5Yy9PjD6DlnEqd8jYIj293spK0-FK_S0tBMzjVmkPDYQwGOel2IX0iFGKOWLZ8WIyTwfh9BXB0dcSYP29PcXYMUGMd0zP5sCJQL7KP1iKChZKZMmIXEPnQbB2ume0wDtzrJ0xSO03k");'
-                ></div>
-                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-                  <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Industry Event</p>
-                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech to Host Military Technology Symposium</p>
-                  <div class="flex items-end gap-3 justify-between">
-                    <p class="text-[#a6b3a2] text-base font-normal leading-normal">
-                      DefenseTech will host a symposium on military technology, bringing together industry experts, government officials, and military leaders to discuss emerging
-                      trends and challenges in the defense sector. The event will feature keynote speeches, panel discussions, and technology demonstrations.
-                    </p>
-                  </div>
-                </div>
-              </div>
+      <div class="p-4 @container">
+        <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+          <div
+            class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSWGDkL8lqHCRAQQuezJCG2SodCp3S9INs9UuFS_iv8k8zTLA6owy6_YwfW1-YWC4uZxrPCx24Hyz4-JDolxZVOdVVN0pgc_YfRqG7rV7L4O3XRCLBnck6bsHvQ1eH-HzARMeCitnJV-sMBOJP2Rsl2qRJGu37vzazB2iUQ1gCTZrBNaEJGRfREj4CN2qQCf6th_ul_T1ZegfmVyWiJ8P1tnGoXNFNLC0LfliP-v2QYjQi5m0CNsFT-Ifwufxg0b1dVF7wIhYNtZM");'
+          ></div>
+          <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+            <p class="text-[#a6b3a2] text-sm font-normal leading-normal">Press Release</p>
+            <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">DefenseTech Announces Strategic Partnership with Global Aerospace Innovators</p>
+            <div class="flex items-end gap-3 justify-between">
+              <p class="text-[#a6b3a2] text-base font-normal leading-normal">
+                DefenseTech, a leading provider of advanced defense solutions, today announced a strategic partnership with Global Aerospace Innovators, a renowned aerospace
+                technology company. This collaboration aims to integrate cutting-edge technologies and expertise to develop next-generation defense systems.
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+
+      </div>
     </div>
-  </body>
-</html>
+  </div>
+</div>
+{% endblock content %}

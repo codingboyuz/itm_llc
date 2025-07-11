@@ -1,35 +1,89 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static %}
 {% load i18n %}
+
 {% block content %}
-<div class="container mx-auto p-6 text-white">
-  <div class="flex min-w-72 flex-col gap-3">
-    <p class="text-white tracking-light text-[32px] font-bold leading-tight"> {% blocktrans %} About {% endblocktrans %} </p>
-</div>
-  {% for about in data %}
-    <div class="mb-10 border border-gray-700 rounded-lg shadow-lg p-6 bg-[#1f1f1f]">
-      <h2 class="text-2xl font-bold mb-4 border-b border-gray-600 pb-2">{{ about.title }}</h2>
 
-      {% if about.video %}
-        <div class="mb-4 rounded overflow-hidden border border-gray-700">
-          <video width="100%" height="auto" controls class="w-full h-auto">
-            <source src="{{ about.video.url }}" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+<div class="px-4 md:px-40 flex flex-1 justify-center py-10">
+  <div class="layout-content-container flex flex-col w-full max-w-[960px] space-y-10">
+
+    <div class="flex min-w-72 flex-col gap-3">
+      <p class="text-white tracking-light text-[32px] font-bold leading-tight">
+        {% blocktrans %}About{% endblocktrans %}
+      </p>
+    </div>
+    <p class="text-white tracking-light text-[32px] font-bold leading-tight">
+      {{data.0.title}}
+    </p>
+    <!-- VIDEO (faqat mavjud bo‘lsa) -->
+    {% if data.0.video %}
+    <div class="w-full aspect-video" data-aos="fade-up">
+      <video controls class="w-full h-full object-cover rounded">
+        <source src="{{ data.0.video.url }}" type="video/mp4">
+        {% blocktrans %}Your browser does not support the video tag.{% endblocktrans %}
+        
+      </video>
+    </div>
+    {% endif %}
+
+    <!-- MATN -->
+    <div class="text-start" data-aos="fade-up">
+      <p class="text-[#a6b3a2] text-0.015em font-normal leading-relaxed mt-3">
+        {{data.0.description}}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-12 mt-10">
+      {% for item in data %}
+        {% if not forloop.first %}
+          {% if forloop.counter0|divisibleby:2 %}
+          <!-- RASM CHAPDA, MATN O‘NGDA -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div data-aos="fade-right">
+              {% for img in item.image.all %}
+              <img src="{{ img.image.url }}" alt="rasim" class="rounded w-full h-auto">
+              {% endfor %}
+            </div>
+            <div class="flex flex-col gap-3" data-aos="fade-left">
+              <h3 class="text-white text-lg font-bold leading-tight">{{ item.title }}</h3>
+              <p class="text-[#a6b3a2] text-sm font-normal leading-relaxed">{{ item.description }}</p>
+            </div>
+          </div>
+          {% else %}
+          <!-- MATN CHAPDA, RASM O‘NGDA -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div class="flex flex-col gap-3" data-aos="fade-right">
+              <h3 class="text-white text-lg font-bold leading-tight">{{ item.title }}</h3>
+              <p class="text-[#a6b3a2] text-sm font-normal leading-relaxed">{{ item.description }}</p>
+            </div>
+            <div data-aos="fade-left">
+              {% for img in item.image.all %}
+              <img src="{{ img.image.url }}" alt="rasim" class="rounded w-full h-auto">
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    
+    <!-- SERTIFIKATLAR -->
+    <div>
+      <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] mb-5" data-aos="fade-up">
+        {% blocktrans %} Our Certificates {% endblocktrans %}
+      </h2>
+      <div class="swiper mySwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          {% for img in certificate %}
+          <div class="swiper-slide p-4 text-center rounded shadow">
+            <img src="{{img.image.url}}" class="mx-auto mb-5 w-50 h-auto rounded" alt="sertifikat">
+          </div>
+          {% endfor %}
         </div>
-      {% endif %}
-
-      <p class="mb-4 text-base leading-relaxed text-gray-300">{{ about.description }}</p>
-  {% endfor %}
-</div>
-
-<div class="container mx-auto px-6 pb-6">
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-    {% for img in images %}
-      <div class="rounded overflow-hidden border border-gray-700 shadow-md">
-        <img src="{{ img.image.url }}" alt="About image" class="w-full h-auto object-cover">
       </div>
-    {% endfor %}
+    </div>
+
   </div>
-  <hr class="my-8 border-gray-600">
 </div>
+
 {% endblock %}

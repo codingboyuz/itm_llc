@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.urls import path, include
 from . import settings
 from django.conf.urls.static import static
-
+from django.views.generic import RedirectView
 from django.conf.urls import handler404
 from django.shortcuts import render
 
@@ -14,16 +14,15 @@ def custom_404(request, exception):
 # handler nomini belgilang
 handler404 = custom_404
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-
- 
+urlpatterns = [path('admin/', admin.site.urls),
 ]
 urlpatterns += i18n_patterns(
     path('i18n/',include('django.conf.urls.i18n')),
-    path('', include('home.urls'),), 
-    path('', include('product.urls'),),  
-    path('', include('about.urls'),),  
+    path('', RedirectView.as_view(url='/uz/home/', permanent=False)),
+    path('home/', include('home.urls')),
+    path('products/', include('product.urls')),
+    path('about/', include('about.urls')),
+
 )
 urlpatterns+=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT )
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
