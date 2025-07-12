@@ -42,63 +42,97 @@
     <div class="relative flex size-full min-h-screen flex-col bg-[#131712] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
         <div class="layout-container flex h-full grow flex-col">
           
-          <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2d372a] px-10 py-3">
+          <header class="flex items-center justify-between border-b border-b-[#2d372a] px-4 md:px-10 py-3">
+            <!-- Logo -->
             <div class="flex items-center gap-4 text-white">
-              <div class="size-4">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
-                </svg>
-              </div>
-              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"><a href="{% url 'home' %}">ITM-LLC</a></h2>
+              <img src="{% static 'image/logooq.png' %}" alt="ITM Logo" class="h-10 w-auto object-contain" />
+              <h2 class="text-lg font-bold tracking-tight text-white">
+                <a href="{% url 'home' %}">ITM-LLC</a>
+              </h2>
             </div>
-
-            <div class="flex flex-1 justify-end gap-8">
-              
-              
+          
+            <!-- Mobil tugma -->
+            <button id="menu-btn" class="block md:hidden text-white">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            </button>
+          
+            <!-- Desktop menyu -->
+            <div class="hidden md:flex flex-1 justify-end gap-8">
               <div class="flex items-center gap-9">
-                <a class="text-white text-sm font-medium leading-normal" href="{% url 'products' %}"> {% blocktrans %} Products {% endblocktrans %} </a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %} Services  {% endblocktrans %} </a>
-                <a class="text-white text-sm font-medium leading-normal" href="{% url 'about' %}">{% blocktrans  %} About  {% endblocktrans %} </a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %} News {% endblocktrans %} </a>
-                <a class="text-white text-sm font-medium leading-normal" href="#">{% blocktrans %}Careers {% endblocktrans %}</a>
-              </div>
-              
-              <form action="{% url 'set_language' %}" method="post" id="languageForm" class="relative">
-                {% csrf_token %}
-                <input type="hidden" name="next" value="{{ request.get_full_path }}">
-            
-                <select name="language"
-                    class="language-selector bg-[#1f261f] border border-[#2d372a] text-white text-base py-2 pl-10 pr-9 rounded-md focus:outline-none appearance-none"
-                    onchange="document.getElementById('languageForm').submit();">
-            
+                <a class="text-white text-sm font-medium" href="{% url 'home' %}">{% blocktrans %}Home{% endblocktrans %}</a>
+                <a class="text-white text-sm font-medium" href="{% url 'products' %}">{% blocktrans %}Products{% endblocktrans %}</a>
+                <a class="text-white text-sm font-medium" href="{% url 'about' %}">{% blocktrans %}About{% endblocktrans %}</a>
+                <a class="text-white text-sm font-medium" href="{% url 'news' %}">{% blocktrans %}News{% endblocktrans %}</a>
+          
+                <form method="post" action="{% url 'set_language' %}" class="relative" id="langForm-desktop">
+                  {% csrf_token %}
+                  <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                  <select name="language"
+                          class="language-selector bg-[#1f261f] border border-[#2d372a] text-white text-sm py-2 px-3 rounded-md"
+                          onchange="document.getElementById('langForm-desktop').submit();">
                     {% get_current_language as LANGUAGE_CODE %}
                     {% get_available_languages as LANGUAGES %}
                     {% get_language_info_list for LANGUAGES as languages %}
                     {% for language in languages %}
-                        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}
-                                class="text-base p-2">
-
-                            {% if language.code == "uz" %}O'zbekcha
-                            {% elif language.code == "ru" %}Русский
-                            {% elif language.code == "en" %}English
-
-                            {% else %}{{ language.name_local }}
-                            {% endif %}
-                        </option>
+                      <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
+                        {% if language.code == 'uz' %}O'zbekcha
+                        {% elif language.code == 'ru' %}Русский
+                        {% elif language.code == 'en' %}English
+                        {% else %}{{ language.name_local }}{% endif %}
+                      </option>
                     {% endfor %}
-                </select>
-                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-2">
-                    <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-                    </svg>
-                </div>
-              </form>
+                  </select>
+                </form>
+              </div>
             </div>
           </header>
           
+          <!-- 🟦 Drawer menyu -->
+          <div id="mobile-drawer"
+               class="fixed top-0 left-0 h-full w-64 bg-[#1f261f] text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-lg md:hidden">
+            <div class="flex items-center justify-between p-4 border-b border-[#2d372a]">
+              <h2 class="text-lg font-bold">ITM-LLC</h2>
+              <button id="drawer-close" class="text-2xl">&times;</button>
+            </div>
+            <nav class="flex flex-col p-4 gap-4 text-base">
+              <a href="{% url 'home' %}">{% blocktrans %}Home{% endblocktrans %}</a>
+              <a href="{% url 'products' %}">{% blocktrans %}Products{% endblocktrans %}</a>
+              <a href="{% url 'about' %}">{% blocktrans %}About{% endblocktrans %}</a>
+              <a href="{% url 'news' %}">{% blocktrans %}News{% endblocktrans %}</a>
+          
+              <!-- Drawer ichida til tanlash -->
+              <form method="post" action="{% url 'set_language' %}" id="langForm-mobile">
+                {% csrf_token %}
+                <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                <select name="language"
+                        class="language-selector bg-[#131712] border border-[#2d372a] text-white text-sm py-2 px-3 rounded-md w-full"
+                        onchange="document.getElementById('langForm-mobile').submit();">
+                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_available_languages as LANGUAGES %}
+                  {% get_language_info_list for LANGUAGES as languages %}
+                  {% for language in languages %}
+                    <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
+                      {% if language.code == 'uz' %}O'zbekcha
+                      {% elif language.code == 'ru' %}Русский
+                      {% elif language.code == 'en' %}English
+                      {% else %}{{ language.name_local }}{% endif %}
+                    </option>
+                  {% endfor %}
+                </select>
+              </form>
+            </nav>
+          </div>
+          
+          <!-- Qoraygan fon -->
+          <div id="drawer-overlay"
+               class="hidden fixed inset-0 bg-black bg-opacity-40 z-40 md:hidden transition-opacity duration-300"></div>
+          
           {% block content %}
           {% endblock content %}
-          
+         
           <footer class="flex justify-center">
             <div class="flex max-w-[960px] flex-1 flex-col">
               <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
@@ -117,6 +151,28 @@
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script>AOS.init();</script>
           <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+          <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const drawer = document.getElementById('mobile-drawer');
+            const drawerClose = document.getElementById('drawer-close');
+            const overlay = document.getElementById('drawer-overlay');
+          
+            menuBtn.addEventListener('click', () => {
+              drawer.classList.remove('-translate-x-full');
+              overlay.classList.remove('hidden');
+            });
+          
+            drawerClose.addEventListener('click', () => {
+              drawer.classList.add('-translate-x-full');
+              overlay.classList.add('hidden');
+            });
+          
+            overlay.addEventListener('click', () => {
+              drawer.classList.add('-translate-x-full');
+              overlay.classList.add('hidden');
+            });
+          </script>
+          
           {% endblock %}
         </div>
     </div>

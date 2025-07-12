@@ -13,4 +13,4 @@ class NewsImagesInline(admin.TabularInline):
 class AboutModelAdmin(admin.ModelAdmin):
     list_display= ['title','description','slug']
     inlines = [NewsImagesInline]
-
+    exclude = ('slug',)

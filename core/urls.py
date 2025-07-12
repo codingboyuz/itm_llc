@@ -22,6 +22,7 @@ urlpatterns += i18n_patterns(
     path('home/', include('home.urls')),
     path('products/', include('product.urls')),
     path('about/', include('about.urls')),
+    path('news/', include('news.urls')),
 
 )
 urlpatterns+=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT )

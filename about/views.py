@@ -17,4 +17,5 @@ class AboutView(View):
             return render(request, "about.html", context)
 
         except Exception as e:
+
             return render(request, "error.html", {"message": f"Xatolik: {str(e)}"})

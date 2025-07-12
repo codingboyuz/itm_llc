@@ -16,10 +16,10 @@
                     <h1
                       class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                     >
-                      {{data.title}}
+                      {{about.title}}
                     </h1>
                     <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                     {{data.sub_title}}
+                     {{about.description}}
                     </h2>
                   </div>
                   <div class="flex-wrap gap-3 flex">
@@ -39,43 +39,38 @@
             </div>
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">{% blocktrans %}About Us{% endblocktrans %}</h2>
             <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              {{data.info}}
+              {{about.description|linebreaksbr}}
+
+
             </p>
+            
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">{% blocktrans %}Featured Products{% endblocktrans %}</h2>
             <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
               <div class="flex items-stretch p-4 gap-3">
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA3ssdNzOJehb6miWngf5iKV1ahv7LZju3PKnwD395ZTuHT7wNc3ReXbasJI8hACS2LQqGpDy1vRHDuQflYosPUP5ogDap3FuIS8Q8yXxN2XfGco8IyPVw6zuxxO9sK5EzBSOy_ay_vKkS45pGTHVkJG8OcasZ1lXhfx7WmHuUQGszSAfHeWfXpnpeNFSQV88WJ42u7UcOQ5EWa1Fd7Qbcn9U4MgfFiaSFYKjfhXCopMV3kpZO6vcg1lMd6BzcwEM9XGUivLYBeH8w");'
-                  ></div>
-                  <div>
-                    <p class="text-white text-base font-medium leading-normal">Tactical Drones</p>
-                    <p class="text-[#a5b6a0] text-sm font-normal leading-normal">Advanced aerial surveillance and reconnaissance.</p>
+                
+                  {% for product in products %}
+                  <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+
+                    <div
+                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
+                      style='background-image: url("{{ product.images.first.image.url }}");'
+                    ></div>
+                    <div>
+                      <p class="text-white text-base font-medium leading-normal">{{product.title}}</p>
+                      <p class="text-[#a5b6a0] text-sm font-normal leading-normal">{{product.description}}</p>
+                    </div>
+  
                   </div>
-                </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuChoK-LNDfhVGaB62pJSsE1RMafagcyRkR3lRi5mn6EZ4nvl17zIh9FvqkRaKeFexqpZI8z5I25B6JSORfChbQZzHZyyxNSNMjWhNUeknUu0-h7INvdAVyBhw1O8Tzo15fJn2pve0huQhCO_aYLpW9VTvJYOq2e4ZdKtr0hePOExaXGvPpGzc91H7b4f09t_RWlKd54k67iUw2fD71ovR9c2-mfV_Mc8PgzbpdIBrHYHYpNvt6wjH6DuavWGtWxe0A_-QQ5GOV2L3Q");'
-                  ></div>
-                  <div>
-                    <p class="text-white text-base font-medium leading-normal">Secure Communication Systems</p>
-                    <p class="text-[#a5b6a0] text-sm font-normal leading-normal">Encrypted communication for secure operations.</p>
-                  </div>
-                </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPNQdOL8cD5b9phd7e0v41S6AwOYr2OpzEtAQjy0fLaMQTvxey7KsvHum35yNwNefOfblPAYwhp2HsiQsUjpsoTym5zFu0I5jO5vAmDAmXDLmhGnoyHyPA58RukGb1hgAVUbhv4RwSNfq8pLd0KlG9KNy_lS-UqfKcEGj8TZrRGtHEfqptVBwrG-kbL08GiggTtbR-D_RQzzlXI3k6lCJXihCbNycZR5lJrs1RF8_bnjLuvaDYkhf2G1jP-xu09r4ZrRkO-tSHmq4");'
-                  ></div>
-                  <div>
-                    <p class="text-white text-base font-medium leading-normal">Armored Vehicles</p>
-                    <p class="text-[#a5b6a0] text-sm font-normal leading-normal">Robust and reliable vehicles for various terrains.</p>
-                  </div>
-                </div>
+                  {% endfor %}
+                
+
+
+
               </div>
+
             </div>
+
+
             <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">News Highlights</h2>
             <div class="p-4">
               <div class="flex items-stretch justify-between gap-4 rounded-lg">
@@ -130,4 +125,4 @@
         </div>
 
     
-    {%endblock content%}        
+    {% endblock content %}        

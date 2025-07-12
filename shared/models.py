@@ -1,7 +1,7 @@
 from django.db import models
 
 class BaseModel(models.Model):
-    created_at = models.DateTimeField(auto_now_add=True)  # Avtomatik yaratilgan sana
+    created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)  # Avtomatik yaratilgan sana
     updated_at = models.DateTimeField(auto_now=True)      # Har safar yangilangan sana
     is_active = models.BooleanField(default=True)         # Soft delete uchun
 
@@ -12,8 +12,6 @@ class BaseModel(models.Model):
 
     class Meta:
         abstract = True
-        ordering = ['-created_at']
-
 
     def delete(self, using=None, keep_parents=False):
         """

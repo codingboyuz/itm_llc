@@ -13,6 +13,8 @@ class AboutImageInline(admin.TabularInline):
 class AboutModelAdmin(admin.ModelAdmin):
     list_display= ['title','description','video']
     inlines = [AboutImageInline]
+    readonly_fields = ('created_at','updated_at')
+
 
 
 @admin.register(CertificateModel)
