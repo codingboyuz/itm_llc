@@ -11,4 +11,5 @@ __pycache__/
 # VSCode
 .vscode/
 
-media\videos\web.mp4
+/media/videos/web.mp4
+
