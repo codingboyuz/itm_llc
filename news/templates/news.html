@@ -1,34 +1,62 @@
-{% extends "base.html" %}
-
-{% block content %}
-
-<div class="px-40 flex flex-1 justify-center py-5">
-  <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-    <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72">News</p></div>
-    {% for item in data %}
-
-<a href="{% url 'news-detail' item.slug %}">
-  <div class="p-4 @container hover:scale-[1.02] transition">
-    <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
-      <div
-        class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-        style='background-image: url({{ item.images.first.image.url }});'
-      ></div>
-      <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
-        <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">{{ item.title }}</p>
-        <p class="text-[#a6b3a2] text-base font-normal leading-normal">
-          {{ item.description|truncatewords:40 }}
-        </p>
-      </div>
+{% extends "base.html" %} {% load i18n %} {% block content %}
+<div
+  class="flex justify-center w-full px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 py-6 min-h-screen"
+>
+  <div
+    class="layout-content-container w-full max-w-[960px] flex flex-col gap-6 flex-grow"
+  >
+    <!-- News Section Title -->
+    <div class="px-2 sm:px-0">
+      <h1 class="text-white text-2xl sm:text-3xl font-bold tracking-tight">
+        News
+      </h1>
     </div>
-  </div>
-</a>
 
-      
-      {% endfor %}
-      </div>
+    <!-- News List -->
+    <div class="flex flex-col gap-4 flex-grow">
+      {% for item in data %}
+      <a href="{% url 'news-detail' item.slug %}" class="block">
+        <div
+          class="group p-3 sm:p-4 rounded-xl transition-transform duration-300 ease-in-out hover:scale-[1.02]"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-4 rounded-xl bg-[#1f1f1f] overflow-hidden"
+          >
+            <!-- Image -->
+            {% if item.images.first %}
+            <div
+              class="w-full md:w-1/2 aspect-video bg-cover bg-center"
+              style="background-image: url('{{ item.images.first.image.url }}');"
+            ></div>
+            {% else %}
+            <div
+              class="w-full md:w-1/2 aspect-video bg-gray-700 flex items-center justify-center text-white text-sm"
+            >
+              No image
+            </div>
+            {% endif %}
+
+            <!-- Text content -->
+            <div
+              class="flex flex-col justify-center w-full md:w-1/2 px-4 py-4 gap-2"
+            >
+              <h2 class="text-white text-lg sm:text-xl font-bold leading-tight">
+                {{ item.title }}
+              </h2>
+              <p class="text-[#a6b3a2] text-sm sm:text-base leading-normal">
+                {{ item.description|truncatewords:40 }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+      {% endfor %} {% if data|length == 0 %}
+      <p class="text-center text-[#a5b6a0] text-base">No news found.</p>
+      {% endif %}
     </div>
+
+    <!-- Spacer to push footer down -->
+    <div class="flex-grow"></div>
   </div>
 </div>
-
 {% endblock content %}

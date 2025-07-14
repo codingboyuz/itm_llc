@@ -3,6 +3,7 @@ from django.shortcuts import render
 from .models import PartnersModel
 from product.models import ProductModel
 from about.models import AboutModel
+from news.models import NewsModel
 
 import logging
 
@@ -13,7 +14,7 @@ class HomePage(View):
         try:
             partners = PartnersModel.objects.all()
             products = ProductModel.objects.prefetch_related("images").order_by('?')[:6]
-            news = ProductModel.objects.all().first()
+            news = NewsModel.objects.filter(is_active=True).last()
             about = AboutModel.objects.all().first()
 
             print(f"news=================={news}")

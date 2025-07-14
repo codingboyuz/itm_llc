@@ -1,128 +1,125 @@
+{% extends 'base.html' %} {% load i18n %} {% block content %}
 
-{% extends 'base.html'  %}
-{% load i18n %}
-{% block content %}
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%),
-                   url("{{data.image.url}}");'
+<div class="px-4 sm:px-6 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+  <div
+    class="layout-content-container flex flex-col max-w-[960px] w-full flex-1"
+  >
+    <!-- News Section -->
+    <div class="@container" data-aos="fade-up">
+      <div class="@[480px]:p-4">
+        <div
+          class="flex min-h-[300px] sm:min-h-[400px] md:min-h-[480px] flex-col gap-4 bg-cover bg-center bg-no-repeat rounded-lg items-start justify-end px-4 pb-6 sm:pb-8 md:pb-10 sm:px-6 md:px-10 transition-transform duration-300 ease-in-out hover:scale-[1.02]"
+          style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("{{news.images.first.image.url}}");'
+        >
+          <div class="flex flex-col gap-2 text-left">
+            <h1
+              class="text-white text-xl sm:text-2xl md:text-3xl font-bold leading-tight tracking-[-0.02em]"
+            >
+              {{ news.title }}
+            </h1>
+            <h2
+              class="text-white text-sm sm:text-base font-normal leading-normal"
+            >
+              {{ news.description|truncatechars:80 }}
+            </h2>
+          </div>
+          <div class="flex-wrap gap-3 flex">
+            <a href="{% url 'news-detail' slug=news.slug %}">
+              <button
+                class="flex min-w-[84px] w-full sm:w-auto cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 sm:h-12 sm:px-5 bg-[#2d372a] text-white text-sm sm:text-base font-bold leading-normal tracking-[0.015em] transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+              >
+                <span class="truncate"
+                  >{% blocktrans %}Learn More{% endblocktrans %}</span
                 >
-                
-                  <div class="flex flex-col gap-2 text-left">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      {{about.title}}
-                    </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                     {{about.description}}
-                    </h2>
-                  </div>
-                  <div class="flex-wrap gap-3 flex">
-                    <button
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#53d22c] text-[#131712] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                    >
-                      <span class="truncate">{% blocktrans %}Explore Products{% endblocktrans %}</span>
-                    </button>
-                    <button
-                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#2d372a] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                    >
-                      <span class="truncate">{% blocktrans %}Learn More{% endblocktrans %}</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">{% blocktrans %}About Us{% endblocktrans %}</h2>
-            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
-              {{about.description|linebreaksbr}}
-
-
-            </p>
-            
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">{% blocktrans %}Featured Products{% endblocktrans %}</h2>
-            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
-              <div class="flex items-stretch p-4 gap-3">
-                
-                  {% for product in products %}
-                  <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-
-                    <div
-                      class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col"
-                      style='background-image: url("{{ product.images.first.image.url }}");'
-                    ></div>
-                    <div>
-                      <p class="text-white text-base font-medium leading-normal">{{product.title}}</p>
-                      <p class="text-[#a5b6a0] text-sm font-normal leading-normal">{{product.description}}</p>
-                    </div>
-  
-                  </div>
-                  {% endfor %}
-                
-
-
-
-              </div>
-
-            </div>
-
-
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">News Highlights</h2>
-            <div class="p-4">
-              <div class="flex items-stretch justify-between gap-4 rounded-lg">
-                <div class="flex flex-[2_2_0px] flex-col gap-4">
-                  <div class="flex flex-col gap-1">
-                    <p class="text-white text-base font-bold leading-tight">DefenseTech Awarded Contract for New Communication Systems</p>
-                    <p class="text-[#a5b6a0] text-sm font-normal leading-normal">
-                      DefenseTech has been awarded a significant contract to supply advanced communication systems to the armed forces.
-                    </p>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#2d372a] text-white text-sm font-medium leading-normal w-fit"
-                  >
-                    <span class="truncate">Read More</span>
-                  </button>
-                </div>
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn_Yi0Q9o0Hbvhfcly2i5Cq0CEqjSaQbK5AKbbAenYEMPs_-O2kf8966vRGfll8_1vp6mhGXZRfK249ln8bCn4lqQI9G_RnRn8NrnXi8aaPuQhbhRNZ5YxVfgVmJGaK5pBOKmpAmoVCO39t_cfI3XTespz2NKDIPwUkIBYw07WLumja1dezMfs253TsLUGVqvQPTEHNoIEqw3tQWiL_PRN5nYqeVDGdtaA8SzqwOGBKIacRx2luTGSZqvyb3zmeYmRiIgeBt_oOI0");'
-                ></div>
-              </div>
-            </div>
-            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">{% blocktrans %}Our Partners{% endblocktrans %}</h2>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqCJ3RLkYV8fbicC1LEWrgQnaPLZh2ba4dHy58BXzsaT1vVpu13bgBSAUZITrXEMNlbs1AzCci2HOxwgG9F_LlCSdn95BFDBj1fsptv5l2IX83XhbJWWOGptd_gi3QLYR1mNVjbDgBMarZXtdDomTCNZRkW_4NMa8n4_Sk97ALTqQjGTWHU7cBke8-olzafxgt3da9nLrgnrkv82qVvvi6lEWgMuYiH0cZJLw45oxL3KBUcFk1ziDljjvwBfzx7Us4gSpYsw0TVww");'
-                ></div>
-              </div>
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5Bc-UBNjoA2e_5quuM_niPrnJ5r8nL_5P49mp2Qdlo5bsKlYPYZNbkSGiacFPBK8oQP5mNhw9dP7fDM8YyCU8V610YgeDkS75sgUEKJxpQpF6MEKYvS3Q7CXC00P9BBCX_6epgLkNNo4FgByRv_polNDi1e96QYUVmRU2tJ-d9voCT65avaPsP9TBjslW3f6S9KilaV1_9RV8cSee-8aObp4Gm9ff8vz_-UMel4w3yf3zvMN-0l5YBZ0vnUQnVSLl6_qG2qsUzKc");'
-                ></div>
-              </div>
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4WbGnvFgV5lED3ivcUrdCRMhC9UAidzAMUZs-wh3nB1obYNuXZQENSMPI9IjLewYwk-D3Sm2g-si8e0R2DUJUGNkSQpRSPf_DTAHIydB1Iaw2xKlRE6jcw9PK3_4Gzlj0n2vh2onoi5ui7hRcroaBVgEocvL3zPwrh5LCVX6XOU3qiyLvI097e46S_JwiYnAvGJOivQbNTjNUzvt5Fe5txfwHSQhQl80MhSwrueRCpx6Ae8jAtSarEj4jBWgRCoIU_niWdzyQfmc");'
-                ></div>
-              </div>
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcaHhMLZnit30ktqPXJgnjUvy3xzYFBL-5o0khs0Oz5OBOfwJDt9BQ-9Lq_f8ABAixEYSxpTaYwe0vZ4jnYXlHS7zUtGOOd0IZYtstK9O90Q7qnfr250bn9p9PesMyFEK9KJo2m8zTSzU8vg2-_9E6_JS9f2ICzsO3hq6cBdNqi3xeVDcW1mnqUe2GYaM2DstcS8_xrXHnG7uhdPcw2oD8c6VgKJrlvBQ2Yk5gqf745aC7leRtdta_wUNivVb5eqyIcTqE15jDClo");'
-                ></div>
-              </div>
-            </div>
-            
+              </button>
+            </a>
           </div>
         </div>
+      </div>
+    </div>
 
-    
-    {% endblock content %}        
+    <!-- About Us Section -->
+    <h2
+      class="text-white text-lg sm:text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 py-5"
+      data-aos="fade-right"
+    >
+      {% blocktrans %}About Us{% endblocktrans %}
+    </h2>
+    <p
+      class="text-white text-sm sm:text-base font-normal leading-normal px-4 pb-3 pt-1"
+      data-aos="fade-up"
+    >
+      {{ about.description|truncatechars:248 }}
+    </p>
+    <a href="{% url 'about' %}" data-aos="zoom-in">
+      <button
+        class="flex min-w-[84px] w-full sm:w-auto cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-[#2d372a] text-white text-sm font-medium leading-normal transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg mx-4 mb-3"
+      >
+        <span class="truncate">Read More</span>
+      </button>
+    </a>
+
+    <!-- Featured Products Section -->
+    <h2
+      class="text-white text-lg sm:text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 py-5"
+      data-aos="fade-left"
+    >
+      {% blocktrans %}Featured Products{% endblocktrans %}
+    </h2>
+    <div
+      class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden snap-x snap-mandatory"
+    >
+      <div class="flex items-stretch p-4 gap-3">
+        {% for product in products %}
+        <div
+          class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-[200px] sm:min-w-[250px] snap-center"
+          data-aos="zoom-in"
+        >
+          <div
+            class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+            style='background-image: url("{{ product.images.first.image.url }}");'
+          ></div>
+          <div>
+            <p
+              class="text-white text-sm sm:text-base font-medium leading-normal"
+            >
+              {{ product.title }}
+            </p>
+            <p
+              class="text-[#a5b6a0] text-xs sm:text-sm font-normal leading-normal"
+            >
+              {{ product.description }}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Our Partners Section -->
+    <h2
+      class="text-white text-lg sm:text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 py-5"
+      data-aos="fade-up"
+    >
+      {% blocktrans %}Our Partners{% endblocktrans %}
+    </h2>
+    <div
+      class="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-3 p-4"
+    >
+      {% for partner in partners %}
+      <div
+        class="overflow-hidden rounded-lg bg-white aspect-square flex items-center justify-center p-2"
+        data-aos="zoom-in"
+      >
+        <img
+          src="{{ partner.image.url }}"
+          alt="partner"
+          class="object-contain w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
+        />
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
