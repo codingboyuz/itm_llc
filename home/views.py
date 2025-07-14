@@ -4,13 +4,11 @@ from .models import PartnersModel
 from product.models import ProductModel
 from about.models import AboutModel
 from news.models import NewsModel
-
-import logging
-
-logger = logging.getLogger(__name__)
+from shared.utils import log_request
 
 class HomePage(View):
     def get(self, request):
+        log_request(logger_name="home",request= request)
         try:
             partners = PartnersModel.objects.all()
             products = ProductModel.objects.prefetch_related("images").order_by('?')[:6]

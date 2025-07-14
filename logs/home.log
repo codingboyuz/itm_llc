@@ -1,0 +1,24 @@
+INFO 2025-07-14 17:02:21,625 home Home sahidasi ochildi
+INFO 2025-07-14 17:02:22,642 home Home sahidasi ochildi
+INFO 2025-07-14 17:03:41,875 home <WSGIRequest: GET '/uz/home/'>
+INFO 2025-07-14 17:03:43,497 home <WSGIRequest: GET '/uz/home/'>
+INFO 2025-07-14 17:03:45,944 home <WSGIRequest: GET '/uz/home/'>
+INFO 2025-07-14 17:03:57,410 home <WSGIRequest: GET '/uz/home/'>
+INFO 2025-07-14 17:18:54,458 home Yangi so‘rov:
+INFO 2025-07-14 17:18:54,458 home Method: GET
+INFO 2025-07-14 17:18:54,458 home URL: /uz/home/
+INFO 2025-07-14 17:18:54,458 home GET: {}
+INFO 2025-07-14 17:18:54,459 home POST: {}
+INFO 2025-07-14 17:18:54,459 home User: admin
+INFO 2025-07-14 17:18:54,459 home IP Address: 127.0.0.1
+INFO 2025-07-14 17:18:54,459 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-14 17:18:54,459 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-14 17:33:58,623 home Yangi so‘rov:
+INFO 2025-07-14 17:33:58,624 home Method: GET
+INFO 2025-07-14 17:33:58,624 home URL: /ru/home/
+INFO 2025-07-14 17:33:58,624 home GET: {}
+INFO 2025-07-14 17:33:58,624 home POST: {}
+INFO 2025-07-14 17:33:58,624 home User: admin
+INFO 2025-07-14 17:33:58,624 home IP Address: 127.0.0.1
+INFO 2025-07-14 17:33:58,624 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-14 17:33:58,624 home ------------------------------------------------------------------------------------------------------------------------------------------------------

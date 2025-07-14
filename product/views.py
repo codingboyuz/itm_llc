@@ -3,9 +3,13 @@ from django.views import View
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
 from .models import ProductModel
+from shared.utils import log_request
+
 
 class ProductsView(View):
     def get(self, request):
+        log_request(logger_name="product",request=request)
+
         data = ProductModel.objects.all().order_by('id')
 
         search_query = request.GET.get('q')
@@ -37,6 +41,8 @@ class ProductsView(View):
 
 class ProductsDetailView(View):
     def get(self, request, pk):
+        log_request(logger_name="product_detail",request=request)
+
         product = get_object_or_404(ProductModel, pk=pk)
 
         images = product.images.all()  # ProductImage modelidagi rasmlar

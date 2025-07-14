@@ -3,5 +3,5 @@ from django.db import models
 
 
 class PartnersModel(models.Model):
-    image = models.ImageField(blank=True,null=True)
+    image = models.ImageField(upload_to="media/partners/" ,blank=True,null=True)
 
