@@ -12,4 +12,5 @@ __pycache__/
 .vscode/
 
 /media/videos/web.mp4
+/static/js
 

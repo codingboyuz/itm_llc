@@ -14,7 +14,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG',default=False,cast=bool)
 
-ALLOWED_HOSTS = ["itm-llc.uz","127.0.0.1"]
+ALLOWED_HOSTS = ["itm-llc.uz","www.itm-llc.uz"]
 
 
 # Application definition
@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     # package
     'modeltranslation',
     'whitenoise',
+    'corsheaders',
 
     # local app
     "home",
@@ -44,6 +45,8 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     "django.middleware.locale.LocaleMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -79,6 +82,11 @@ SECURE_BROWSER_XSS_FILTER = True
 SECURE_HSTS_SECONDS = 31536000
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
+
+
+CORS_ALLOWED_ORIGINS = [
+    "https://itm-llc.uz",
+]
 
 LOGGING = {
     'version': 1,

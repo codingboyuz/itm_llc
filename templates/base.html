@@ -145,12 +145,46 @@
             </div>
           </footer>
           
-          {% block scripts %}
-          <script src="{% static 'js/gallery.js' %}"></script>
-          <script src="{% static 'js/anim.js' %}"></script>
+          {% comment %} <script src="{% static 'js/gallery.js' %}"></script>
+          <script src="{% static 'js/anim.js' %}"></script> {% endcomment %}
+          <script >
+            function showImage(url) {
+    const mainImage = document.getElementById('main-image');
+    if (mainImage) mainImage.src = url;
+}
+
+function openFullscreen(imgElement) {
+    if (!imgElement) return;
+    if (imgElement.requestFullscreen) {
+        imgElement.requestFullscreen();
+    } else if (imgElement.webkitRequestFullscreen) {
+        imgElement.webkitRequestFullscreen();
+    } else if (imgElement.msRequestFullscreen) {
+        imgElement.msRequestFullscreen();
+    }
+}
+
+          </script>
+
+
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script>AOS.init();</script>
           <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+          <script >
+             const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    }
+  });
+          </script>
           <script>
             const menuBtn = document.getElementById('menu-btn');
             const drawer = document.getElementById('mobile-drawer');
@@ -172,8 +206,6 @@
               overlay.classList.add('hidden');
             });
           </script>
-          
-          {% endblock %}
         </div>
     </div>
 </body>
