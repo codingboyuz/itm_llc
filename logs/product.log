@@ -16,3 +16,12 @@ INFO 2025-07-14 17:34:00,056 product User: admin
 INFO 2025-07-14 17:34:00,056 product IP Address: 127.0.0.1
 INFO 2025-07-14 17:34:00,056 product User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 INFO 2025-07-14 17:34:00,056 product ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-15 21:12:44,166 product Yangi so‘rov:
+INFO 2025-07-15 21:12:44,167 product Method: GET
+INFO 2025-07-15 21:12:44,167 product URL: /uz/products/
+INFO 2025-07-15 21:12:44,167 product GET: {}
+INFO 2025-07-15 21:12:44,167 product POST: {}
+INFO 2025-07-15 21:12:44,167 product User: Anonymous
+INFO 2025-07-15 21:12:44,167 product IP Address: 127.0.0.1
+INFO 2025-07-15 21:12:44,167 product User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0
+INFO 2025-07-15 21:12:44,167 product ------------------------------------------------------------------------------------------------------------------------------------------------------

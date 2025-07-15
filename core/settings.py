@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ["itm-llc.uz", "www.itm-llc.uz"]
+ALLOWED_HOSTS = ['itm-llc.uz', 'www.itm-llc.uz', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
@@ -58,7 +58,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'core.context_processors.static_version',
             ],
         },
     },
@@ -66,10 +65,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-# CORS
+# # CORS
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "https://itm-llc.uz",
+    "https://127.0.0.1:8000",
 ]
 
 # Database

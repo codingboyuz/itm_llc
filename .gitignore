@@ -12,5 +12,9 @@ __pycache__/
 .vscode/
 
 /media/videos/web.mp4
-/static/js
-
+/logs/about.log
+/logs/home.log
+/logs/news.log
+/logs/news_detail.log
+/logs/product.log
+/logs/product_detail.log
