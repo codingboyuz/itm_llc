@@ -68,24 +68,25 @@
                 <a class="text-white text-sm font-medium" href="{% url 'news' %}">{% blocktrans %}News{% endblocktrans %}</a>
           
                 <form method="post" action="{% url 'set_language' %}" class="relative" id="langForm-desktop">
-                  {% csrf_token %}
-                  <input type="hidden" name="next" value="{{ request.get_full_path }}">
-                  <select name="language"
-                          class="language-selector bg-[#1f261f] border border-[#2d372a] text-white text-sm py-2 px-3 rounded-md"
-                          onchange="document.getElementById('langForm-desktop').submit();">
-                    {% get_current_language as LANGUAGE_CODE %}
-                    {% get_available_languages as LANGUAGES %}
-                    {% get_language_info_list for LANGUAGES as languages %}
-                    {% for language in languages %}
-                      <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
-                        {% if language.code == 'uz' %}O'zbekcha
-                        {% elif language.code == 'ru' %}Русский
-                        {% elif language.code == 'en' %}English
-                        {% else %}{{ language.name_local }}{% endif %}
-                      </option>
-                    {% endfor %}
-                  </select>
-                </form>
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ request.path }}">
+                    <select name="language"
+                            class="language-selector bg-[#1f261f] border border-[#2d372a] text-white text-sm py-2 px-3 rounded-md"
+                            onchange="document.getElementById('langForm-desktop').submit();">
+                      {% get_current_language as LANGUAGE_CODE %}
+                      {% get_available_languages as LANGUAGES %}
+                      {% get_language_info_list for LANGUAGES as languages %}
+                      {% for language in languages %}
+                        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
+                          {% if language.code == 'uz' %}O'zbekcha
+                          {% elif language.code == 'ru' %}Русский
+                          {% elif language.code == 'en' %}English
+                          {% else %}{{ language.name_local }}{% endif %}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  </form>
+
               </div>
             </div>
           </header>
@@ -105,24 +106,28 @@
           
               <!-- Drawer ichida til tanlash -->
               <form method="post" action="{% url 'set_language' %}" id="langForm-mobile">
-                {% csrf_token %}
-                <input type="hidden" name="next" value="{{ request.get_full_path }}">
-                <select name="language"
-                        class="language-selector bg-[#131712] border border-[#2d372a] text-white text-sm py-2 px-3 rounded-md w-full"
-                        onchange="document.getElementById('langForm-mobile').submit();">
-                  {% get_current_language as LANGUAGE_CODE %}
-                  {% get_available_languages as LANGUAGES %}
-                  {% get_language_info_list for LANGUAGES as languages %}
-                  {% for language in languages %}
-                    <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
-                      {% if language.code == 'uz' %}O'zbekcha
-                      {% elif language.code == 'ru' %}Русский
-                      {% elif language.code == 'en' %}English
-                      {% else %}{{ language.name_local }}{% endif %}
-                    </option>
-                  {% endfor %}
-                </select>
-              </form>
+                  {% csrf_token %}
+                  <input type="hidden" name="next" value="{{ request.path }}">
+                  <select name="language"
+                          class="language-selector bg-[#131712] border border-[#2d372a] text-white text-sm py-2 px-3 rounded-md w-full"
+                          onchange="document.getElementById('langForm-mobile').submit();">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    {% get_available_languages as LANGUAGES %}
+                    {% get_language_info_list for LANGUAGES as languages %}
+                    {% for language in languages %}
+                      <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
+                        {% if language.code == 'uz' %}O'zbekcha
+                        {% elif language.code == 'ru' %}Русский
+                        {% elif language.code == 'en' %}English
+                        {% else %}{{ language.name_local }}{% endif %}
+                      </option>
+                    {% endfor %}
+                  </select>
+                </form>
+
+
+
+
             </nav>
           </div>
           
@@ -145,46 +150,12 @@
             </div>
           </footer>
           
-          {% comment %} <script src="{% static 'js/gallery.js' %}"></script>
-          <script src="{% static 'js/anim.js' %}"></script> {% endcomment %}
-          <script >
-            function showImage(url) {
-    const mainImage = document.getElementById('main-image');
-    if (mainImage) mainImage.src = url;
-}
-
-function openFullscreen(imgElement) {
-    if (!imgElement) return;
-    if (imgElement.requestFullscreen) {
-        imgElement.requestFullscreen();
-    } else if (imgElement.webkitRequestFullscreen) {
-        imgElement.webkitRequestFullscreen();
-    } else if (imgElement.msRequestFullscreen) {
-        imgElement.msRequestFullscreen();
-    }
-}
-
-          </script>
-
-
+          {% block scripts %}
+          <script src="{% static 'js/gallery.js' %}?v={{ STATIC_VERSION }}"></script>
+          <script src="{% static 'js/anim.js' %}?v={{ STATIC_VERSION }}"></script>
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
           <script>AOS.init();</script>
           <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-          <script >
-             const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 2000,
-    },
-    breakpoints: {
-      640: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    }
-  });
-          </script>
           <script>
             const menuBtn = document.getElementById('menu-btn');
             const drawer = document.getElementById('mobile-drawer');
@@ -206,6 +177,8 @@ function openFullscreen(imgElement) {
               overlay.classList.add('hidden');
             });
           </script>
+          
+          {% endblock %}
         </div>
     </div>
 </body>
