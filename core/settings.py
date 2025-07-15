@@ -72,6 +72,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_HSTS_SECONDS = 31536000
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
 
 LOGGING = {
     'version': 1,
@@ -191,7 +198,7 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'uz'  # ✅ shu bo'lishi kerak
 
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
@@ -210,15 +217,23 @@ MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
 MODELTRANSLATION_PREPOPULATE_LANGUAGE = 'uz'
 
 LOCALE_PATHS = BASE_DIR, 'locale'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/itmllcuz/itm-llc/staticfiles'
 
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = ('/home/itmllcuz/itm-llc/static',)
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -226,7 +241,7 @@ STATICFILES_FINDERS = [
 ]
 
 MEDIA_URL = 'media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_ROOT = '/home/itmllcuz/itm-llc/media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

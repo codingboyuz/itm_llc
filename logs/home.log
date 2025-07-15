@@ -22,3 +22,88 @@ INFO 2025-07-14 17:33:58,624 home User: admin
 INFO 2025-07-14 17:33:58,624 home IP Address: 127.0.0.1
 INFO 2025-07-14 17:33:58,624 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 INFO 2025-07-14 17:33:58,624 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-15 11:38:43,881 home SO‘ROV: GET /
+INFO 2025-07-15 11:38:44,505 home Yangi so‘rov:
+INFO 2025-07-15 11:38:44,505 home Method: GET
+INFO 2025-07-15 11:38:44,505 home URL: /uz/home/
+INFO 2025-07-15 11:38:44,505 home GET: {}
+INFO 2025-07-15 11:38:44,505 home POST: {}
+INFO 2025-07-15 11:38:44,505 home User: Anonymous
+INFO 2025-07-15 11:38:44,505 home IP Address: 127.0.0.1
+INFO 2025-07-15 11:38:44,505 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-15 11:38:44,505 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-15 11:39:38,785 home Yangi so‘rov:
+INFO 2025-07-15 11:39:38,785 home Method: GET
+INFO 2025-07-15 11:39:38,785 home URL: /uz/home/
+INFO 2025-07-15 11:39:38,785 home GET: {}
+INFO 2025-07-15 11:39:38,786 home POST: {}
+INFO 2025-07-15 11:39:38,786 home User: Anonymous
+INFO 2025-07-15 11:39:38,786 home IP Address: 127.0.0.1
+INFO 2025-07-15 11:39:38,786 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-15 11:39:38,786 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-15 11:39:39,801 home Yangi so‘rov:
+INFO 2025-07-15 11:39:39,801 home Method: GET
+INFO 2025-07-15 11:39:39,801 home URL: /uz/home/
+INFO 2025-07-15 11:39:39,801 home GET: {}
+INFO 2025-07-15 11:39:39,801 home POST: {}
+INFO 2025-07-15 11:39:39,801 home User: Anonymous
+INFO 2025-07-15 11:39:39,801 home IP Address: 127.0.0.1
+INFO 2025-07-15 11:39:39,801 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-15 11:39:39,801 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-15 11:42:47,338 home Yangi so‘rov:
+INFO 2025-07-15 11:42:47,338 home Method: GET
+INFO 2025-07-15 11:42:47,338 home URL: /uz/home/
+INFO 2025-07-15 11:42:47,338 home GET: {}
+INFO 2025-07-15 11:42:47,338 home POST: {}
+INFO 2025-07-15 11:42:47,338 home User: Anonymous
+INFO 2025-07-15 11:42:47,338 home IP Address: 127.0.0.1
+INFO 2025-07-15 11:42:47,338 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-15 11:42:47,338 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-15 11:53:47,295 home SO‘ROV: GET /
+INFO 2025-07-15 11:53:49,549 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:37,848 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:38,626 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:39,274 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:39,769 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:40,217 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:40,890 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:41,137 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:41,329 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:41,489 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:51,854 home SO‘ROV: GET /
+INFO 2025-07-15 11:54:51,877 home Yangi so‘rov:
+INFO 2025-07-15 11:54:51,877 home Method: GET
+INFO 2025-07-15 11:54:51,877 home URL: /uz/home/
+INFO 2025-07-15 11:54:51,877 home GET: {}
+INFO 2025-07-15 11:54:51,877 home POST: {}
+INFO 2025-07-15 11:54:51,877 home User: Anonymous
+INFO 2025-07-15 11:54:51,877 home IP Address: 127.0.0.1
+INFO 2025-07-15 11:54:51,877 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-15 11:54:51,877 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-15 11:54:59,037 home Yangi so‘rov:
+INFO 2025-07-15 11:54:59,037 home Method: GET
+INFO 2025-07-15 11:54:59,037 home URL: /uz/home/
+INFO 2025-07-15 11:54:59,038 home GET: {}
+INFO 2025-07-15 11:54:59,038 home POST: {}
+INFO 2025-07-15 11:54:59,038 home User: Anonymous
+INFO 2025-07-15 11:54:59,038 home IP Address: 127.0.0.1
+INFO 2025-07-15 11:54:59,038 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-15 11:54:59,038 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-15 11:55:03,202 home Yangi so‘rov:
+INFO 2025-07-15 11:55:03,202 home Method: GET
+INFO 2025-07-15 11:55:03,202 home URL: /uz/home/
+INFO 2025-07-15 11:55:03,202 home GET: {}
+INFO 2025-07-15 11:55:03,202 home POST: {}
+INFO 2025-07-15 11:55:03,202 home User: Anonymous
+INFO 2025-07-15 11:55:03,202 home IP Address: 127.0.0.1
+INFO 2025-07-15 11:55:03,202 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-15 11:55:03,202 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-15 11:55:05,602 home Yangi so‘rov:
+INFO 2025-07-15 11:55:05,602 home Method: GET
+INFO 2025-07-15 11:55:05,602 home URL: /uz/home/
+INFO 2025-07-15 11:55:05,602 home GET: {}
+INFO 2025-07-15 11:55:05,602 home POST: {}
+INFO 2025-07-15 11:55:05,602 home User: Anonymous
+INFO 2025-07-15 11:55:05,602 home IP Address: 127.0.0.1
+INFO 2025-07-15 11:55:05,602 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-15 11:55:05,602 home ------------------------------------------------------------------------------------------------------------------------------------------------------
