@@ -187,3 +187,12 @@ INFO 2025-07-16 14:23:42,442 product_detail User: admin
 INFO 2025-07-16 14:23:42,442 product_detail IP Address: 192.168.30.18
 INFO 2025-07-16 14:23:42,442 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 INFO 2025-07-16 14:23:42,442 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:19:25,800 product_detail Yangi so‘rov:
+INFO 2025-07-16 18:19:25,800 product_detail Method: GET
+INFO 2025-07-16 18:19:25,800 product_detail URL: /uz/products/2/
+INFO 2025-07-16 18:19:25,800 product_detail GET: {}
+INFO 2025-07-16 18:19:25,800 product_detail POST: {}
+INFO 2025-07-16 18:19:25,800 product_detail User: admin
+INFO 2025-07-16 18:19:25,801 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 18:19:25,801 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:19:25,801 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------

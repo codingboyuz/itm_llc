@@ -1,32 +1,39 @@
-{% extends "base.html" %}
-{% load i18n %}
-{% block content %}
-
+{% extends "base.html" %} {% load i18n %} {% block content %}
 
 <!-- Responsive Container -->
 <div class="container mx-auto px-4 sm:px-6 py-6 md:py-10 max-w-4xl">
-         <!-- Breadcrumb -->
-         <div class="flex flex-wrap gap-2 p-4">
-          <a class="text-[#a6b3a2] text-base font-medium leading-normal" href="{% url 'news' %}"> {% blocktrans %}News{% endblocktrans %}</a>
-          <span class="text-[#a6b3a2] text-base font-medium leading-normal">/</span>
-          <span class="text-white text-base font-medium leading-normal">{{ object.title }}</span>
-      </div>
+  <!-- Breadcrumb -->
+  <div class="flex flex-wrap gap-2 p-4">
+    <a
+      class="text-[#a6b3a2] text-base font-medium leading-normal"
+      href="{% url 'news' %}"
+    >
+      {% blocktrans %}News{% endblocktrans %}</a
+    >
+    <span class="text-[#a6b3a2] text-base font-medium leading-normal">/</span>
+    <span class="text-white text-base font-medium leading-normal"
+      >{{ object.title }}</span
+    >
+  </div>
 
   <!-- Swiper Container (Responsive Height & Layout) -->
   <div class="swiper mySwiper rounded-xl overflow-hidden">
     <div class="swiper-wrapper">
       {% for img in object.images.all %}
-        <div class="swiper-slide">
-          <img src="{{ img.image.url }}" alt="Image"
-            class="w-full h-[250px] xs:h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover rounded-xl" />
-        </div>
+      <div class="swiper-slide">
+        <img
+          src="{{ img.image.url }}"
+          alt="Image"
+          class="w-full h-[250px] xs:h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover rounded-xl"
+        />
+      </div>
       {% endfor %}
     </div>
 
     <!-- Navigation Arrows (Hidden on Mobile) -->
     <div class="swiper-button-next hidden sm:block"></div>
     <div class="swiper-button-prev hidden sm:block"></div>
-    
+
     <!-- Pagination (Visible on Mobile) -->
     <div class="swiper-pagination sm:hidden"></div>
   </div>
@@ -36,8 +43,6 @@
     {{ object.description|linebreaksbr }}
   </div>
 </div>
-
-
 
 <!-- Swiper Initialization -->
 <script>
@@ -59,7 +64,7 @@
     },
     effect: "fade",
     fadeEffect: {
-      crossFade: true
+      crossFade: true,
     },
     // Mobile-friendly touch controls
     touchRatio: 1,

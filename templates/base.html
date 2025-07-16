@@ -1,46 +1,31 @@
 {% load static %}
 {% load i18n %}
-
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE|default:'uz' }}">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- SEO -->
-  <meta name="description" content="ITM-LLC – Innovatsion texnologiyalar va mahsulotlar ishlab chiqaruvchisi">
-  <meta name="keywords" content="ITM, texnologiya, mahsulotlar, sertifikat, Uzbekistan, ishlab chiqarish">
-  <meta name="author" content="ITM-LLC">
+  <title>{% block title %}ITM-LLC{% endblock %}</title>
 
-  <!-- Open Graph (for Facebook & other social platforms) -->
+  <!-- SEO -->
+  <meta name="description" content="ITM-LLC – Innovatsion texnologiyalar va mahsulotlar ishlab chiqaruvchisi" />
+  <meta name="keywords" content="ITM, texnologiya, mahsulotlar, sertifikat, Uzbekistan" />
+  <meta name="author" content="ITM-LLC" />
   <meta property="og:title" content="ITM-LLC" />
   <meta property="og:description" content="Innovatsion texnologiyalar va mahsulotlar ishlab chiqaruvchisi" />
   <meta property="og:image" content="{% static 'image/logooq.png' %}" />
   <meta property="og:url" content="https://itm-llc.uz/" />
   <meta property="og:type" content="website" />
 
-  <!-- Twitter Meta -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ITM-LLC">
-  <meta name="twitter:description" content="Innovatsion texnologiyalar va mahsulotlar ishlab chiqaruvchisi">
-  <meta name="twitter:image" content="{% static 'image/logooq.png' %}">
-
-  <title>{% block title %}ITM-LLC{% endblock %}</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="{% static 'image/favicon.png' %}" />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Manrope:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900" />
-
-  <!-- AOS & Swiper CSS -->
+  <!-- Styles -->
+  <link rel="icon" href="{% static 'image/favicon.png' %}" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
-  <!-- Custom Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
+    body {
+      font-family: Manrope, 'Noto Sans', sans-serif;
+    }
     .language-selector {
       min-width: 120px;
       padding: 0.5rem 1rem;
@@ -48,191 +33,72 @@
     }
     .language-selector option {
       font-size: 1rem;
-      padding: 0.5rem;
-    }
-    .custom-scroll-hide {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    .custom-scroll-hide::-webkit-scrollbar {
-      display: none;
     }
   </style>
-
   {% block extra_head %}{% endblock %}
 </head>
 
+<body class="bg-[#131712] text-white overflow-x-hidden">
+  <div class="min-h-screen flex flex-col">
 
-<body>
-    <div class="relative flex size-full min-h-screen flex-col bg-[#131712] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
-        <div class="layout-container flex h-full grow flex-col">
-          
-          <header class="flex items-center justify-between border-b border-b-[#2d372a] px-4 md:px-10 py-3">
-            <!-- Logo -->
-            <div class="flex items-center gap-4 text-white">
-              <img src="{% static 'image/logooq.png' %}" alt="ITM Logo" class="h-10 w-auto object-contain" />
-              <h2 class="text-lg font-bold tracking-tight text-white">
-                <a href="{% url 'home' %}">ITM-LLC</a>
-              </h2>
-            </div>
-          
-            <!-- Mobil tugma -->
-            <button id="menu-btn" class="block md:hidden text-white">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          
-            <!-- Desktop menyu -->
-            <div class="hidden md:flex flex-1 justify-end gap-8">
-              <div class="flex items-center gap-9">
-                <a class="text-white text-sm font-medium" href="{% url 'home' %}">{% blocktrans %}Home{% endblocktrans %}</a>
-                <a class="text-white text-sm font-medium" href="{% url 'products' %}">{% blocktrans %}Products{% endblocktrans %}</a>
-                <a class="text-white text-sm font-medium" href="{% url 'about' %}">{% blocktrans %}About{% endblocktrans %}</a>
-                <a class="text-white text-sm font-medium" href="{% url 'news' %}">{% blocktrans %}News{% endblocktrans %}</a>
-          
-                <form method="post" action="{% url 'set_language' %}" class="relative" id="langForm-desktop">
-                    {% csrf_token %}
-                    <input type="hidden" name="next" value="{{ request.path }}">
-                    <select name="language"
-                            class="language-selector bg-[#1f261f] border border-[#2d372a] text-white text-sm py-2 px-3 rounded-md"
-                            onchange="document.getElementById('langForm-desktop').submit();">
-                      {% get_current_language as LANGUAGE_CODE %}
-                      {% get_available_languages as LANGUAGES %}
-                      {% get_language_info_list for LANGUAGES as languages %}
-                      {% for language in languages %}
-                        <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
-                          {% if language.code == 'uz' %}O'zbekcha
-                          {% elif language.code == 'ru' %}Русский
-                          {% elif language.code == 'en' %}English
-                          {% else %}{{ language.name_local }}{% endif %}
-                        </option>
-                      {% endfor %}
-                    </select>
-                  </form>
+    <!-- Header -->
+    <header class="flex justify-between items-center px-4 py-3 border-b border-[#2d372a]">
+      <div class="flex items-center gap-4">
+        <img src="{% static 'image/logooq.png' %}" class="h-10 w-auto" alt="ITM Logo">
+        <h2 class="text-lg font-bold"><a href="{% url 'home' %}">ITM-LLC</a></h2>
+      </div>
+      <nav class="hidden md:flex gap-6">
+        <a href="{% url 'home' %}">{% trans "Home" %}</a>
+        <a href="{% url 'products' %}">{% trans "Products" %}</a>
+        <a href="{% url 'about' %}">{% trans "About" %}</a>
+        <a href="{% url 'news' %}">{% trans "News" %}</a>
+        <!-- Language switcher -->
+        <form method="post" action="{% url 'set_language' %}">
+          {% csrf_token %}
+          <select name="language" class="language-selector bg-[#1f261f] border border-[#2d372a] text-white"
+                  onchange="this.form.submit();">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for lang in languages %}
+              <option value="{{ lang.code }}" {% if lang.code == LANGUAGE_CODE %}selected{% endif %}>
+                {% if lang.code == 'uz' %}O'zbekcha{% elif lang.code == 'ru' %}Русский{% elif lang.code == 'en' %}English{% endif %}
+              </option>
+            {% endfor %}
+          </select>
+        </form>
+      </nav>
+    </header>
 
-              </div>
-            </div>
-          </header>
-          
-          <!-- 🟦 Drawer menyu -->
-          <div id="mobile-drawer"
-               class="fixed top-0 left-0 h-full w-64 bg-[#1f261f] text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out shadow-lg md:hidden">
-            <div class="flex items-center justify-between p-4 border-b border-[#2d372a]">
-              <h2 class="text-lg font-bold">ITM-LLC</h2>
-              <button id="drawer-close" class="text-2xl">&times;</button>
-            </div>
-            <nav class="flex flex-col p-4 gap-4 text-base">
-              <a href="{% url 'home' %}">{% blocktrans %}Home{% endblocktrans %}</a>
-              <a href="{% url 'products' %}">{% blocktrans %}Products{% endblocktrans %}</a>
-              <a href="{% url 'about' %}">{% blocktrans %}About{% endblocktrans %}</a>
-              <a href="{% url 'news' %}">{% blocktrans %}News{% endblocktrans %}</a>
-          
-              <!-- Drawer ichida til tanlash -->
-              <form method="post" action="{% url 'set_language' %}" id="langForm-mobile">
-                  {% csrf_token %}
-                  <input type="hidden" name="next" value="{{ request.path }}">
-                  <select name="language"
-                          class="language-selector bg-[#131712] border border-[#2d372a] text-white text-sm py-2 px-3 rounded-md w-full"
-                          onchange="document.getElementById('langForm-mobile').submit();">
-                    {% get_current_language as LANGUAGE_CODE %}
-                    {% get_available_languages as LANGUAGES %}
-                    {% get_language_info_list for LANGUAGES as languages %}
-                    {% for language in languages %}
-                      <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %}selected{% endif %}>
-                        {% if language.code == 'uz' %}O'zbekcha
-                        {% elif language.code == 'ru' %}Русский
-                        {% elif language.code == 'en' %}English
-                        {% else %}{{ language.name_local }}{% endif %}
-                      </option>
-                    {% endfor %}
-                  </select>
-                </form>
+    <!-- Page Content -->
+    <main class="flex-1">
+      {% block content %}{% endblock %}
+    </main>
 
+    <!-- Footer -->
+    <footer class="py-10 text-center border-t border-[#2d372a] text-[#a5b6a0]">
+      <div class="mb-4 flex flex-wrap justify-center gap-6">
+        <a href="#">{% trans "Privacy Policy" %}</a>
+        <a href="#">{% trans "Terms of Service" %}</a>
+      </div>
+      <p>© {% now "Y" %} ITM-LLC. {% trans "All rights reserved." %}</p>
+    </footer>
 
+    {% block scripts %}
+    <!-- Tailwind CDN (only for development) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000 });</script>
 
-            </nav>
-          </div>
-          
-          <!-- Qoraygan fon -->
-          <div id="drawer-overlay"
-               class="hidden fixed inset-0 bg-black bg-opacity-40 z-40 md:hidden transition-opacity duration-300"></div>
-          
-          {% block content %}
-          {% endblock content %}
-         
-          <footer class="flex justify-center">
-            <div class="flex max-w-[960px] flex-1 flex-col">
-              <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-                <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                  <a class="text-[#a5b6a0] text-base font-normal leading-normal min-w-40" href="#">{% blocktrans %} Privacy Policy {% endblocktrans %}</a>
-                  <a class="text-[#a5b6a0] text-base font-normal leading-normal min-w-40" href="#">{% blocktrans %} Terms of Service {% endblocktrans %}</a>
-                </div>
-                <p class="text-[#a5b6a0] text-base font-normal leading-normal">© {% now "Y" %} ITM-LLC. {% blocktrans %}All rights reserved.{% endblocktrans %}</p>
-              </footer>
-            </div>
-          </footer>
-          
-          {% block scripts %}
-            <!-- Tailwind CSS -->
-            <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-            <!-- AOS -->
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>AOS.init();</script>
-
-            <!-- Swiper JS -->
-            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-            <!-- Swiper init -->
-            <script>
-              const swiper = new Swiper(".mySwiper", {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                loop: true,
-                pagination: {
-                  el: ".swiper-pagination",
-                  clickable: true,
-                },
-                navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                },
-              });
-            </script>
-
-            <!-- Custom JS -->
-            <script src="{% static 'js/gallery.js' %}?v={{ STATIC_VERSION }}"></script>
-            <script src="{% static 'js/anim.js' %}?v={{ STATIC_VERSION }}"></script>
-
-            <!-- Mobile drawer control -->
-            <script>
-              const menuBtn = document.getElementById('menu-btn');
-              const drawer = document.getElementById('mobile-drawer');
-              const drawerClose = document.getElementById('drawer-close');
-              const overlay = document.getElementById('drawer-overlay');
-
-              menuBtn.addEventListener('click', () => {
-                drawer.classList.remove('-translate-x-full');
-                overlay.classList.remove('hidden');
-              });
-
-              drawerClose.addEventListener('click', () => {
-                drawer.classList.add('-translate-x-full');
-                overlay.classList.add('hidden');
-              });
-
-              overlay.addEventListener('click', () => {
-                drawer.classList.add('-translate-x-full');
-                overlay.classList.add('hidden');
-              });
-            </script>
-          {% endblock %}
-
-
-        </div>
-    </div>
+    <!-- Your own JS -->
+    <script src="{% static 'js/gallery.js' %}?v={{ STATIC_VERSION }}"></script>
+    <script src="{% static 'js/anim.js' %}?v={{ STATIC_VERSION }}"></script>
+    {% endblock %}
+  </div>
 </body>
 </html>

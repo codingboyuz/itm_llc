@@ -790,3 +790,608 @@ INFO 2025-07-16 15:18:43,983 home User: admin
 INFO 2025-07-16 15:18:43,983 home IP Address: 192.168.30.18
 INFO 2025-07-16 15:18:43,983 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 INFO 2025-07-16 15:18:43,983 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 15:32:08,454 home SO‘ROV: GET /
+INFO 2025-07-16 15:32:08,467 home Yangi so‘rov:
+INFO 2025-07-16 15:32:08,467 home Method: GET
+INFO 2025-07-16 15:32:08,467 home URL: /uz/home/
+INFO 2025-07-16 15:32:08,467 home GET: {}
+INFO 2025-07-16 15:32:08,467 home POST: {}
+INFO 2025-07-16 15:32:08,467 home User: admin
+INFO 2025-07-16 15:32:08,467 home IP Address: 192.168.30.18
+INFO 2025-07-16 15:32:08,467 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 15:32:08,467 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 15:32:22,711 home Yangi so‘rov:
+INFO 2025-07-16 15:32:22,711 home Method: GET
+INFO 2025-07-16 15:32:22,711 home URL: /uz/home/
+INFO 2025-07-16 15:32:22,711 home GET: {}
+INFO 2025-07-16 15:32:22,711 home POST: {}
+INFO 2025-07-16 15:32:22,711 home User: admin
+INFO 2025-07-16 15:32:22,711 home IP Address: 192.168.30.18
+INFO 2025-07-16 15:32:22,711 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 15:32:22,711 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:19:01,866 home Yangi so‘rov:
+INFO 2025-07-16 18:19:01,866 home Method: GET
+INFO 2025-07-16 18:19:01,866 home URL: /uz/home/
+INFO 2025-07-16 18:19:01,866 home GET: {}
+INFO 2025-07-16 18:19:01,866 home POST: {}
+INFO 2025-07-16 18:19:01,866 home User: admin
+INFO 2025-07-16 18:19:01,866 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:19:01,866 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:19:01,866 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:22:01,147 home SO‘ROV: GET /
+INFO 2025-07-16 18:22:01,159 home Yangi so‘rov:
+INFO 2025-07-16 18:22:01,159 home Method: GET
+INFO 2025-07-16 18:22:01,159 home URL: /uz/home/
+INFO 2025-07-16 18:22:01,159 home GET: {}
+INFO 2025-07-16 18:22:01,159 home POST: {}
+INFO 2025-07-16 18:22:01,159 home User: Anonymous
+INFO 2025-07-16 18:22:01,159 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:22:01,159 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:22:01,159 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:22:12,558 home Yangi so‘rov:
+INFO 2025-07-16 18:22:12,558 home Method: GET
+INFO 2025-07-16 18:22:12,558 home URL: /uz/home/
+INFO 2025-07-16 18:22:12,558 home GET: {}
+INFO 2025-07-16 18:22:12,558 home POST: {}
+INFO 2025-07-16 18:22:12,558 home User: Anonymous
+INFO 2025-07-16 18:22:12,558 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:22:12,558 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:22:12,558 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:05,017 home Yangi so‘rov:
+INFO 2025-07-16 18:29:05,017 home Method: GET
+INFO 2025-07-16 18:29:05,017 home URL: /uz/home/
+INFO 2025-07-16 18:29:05,017 home GET: {}
+INFO 2025-07-16 18:29:05,017 home POST: {}
+INFO 2025-07-16 18:29:05,017 home User: admin
+INFO 2025-07-16 18:29:05,017 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:05,017 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:05,017 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:07,110 home Yangi so‘rov:
+INFO 2025-07-16 18:29:07,110 home Method: GET
+INFO 2025-07-16 18:29:07,110 home URL: /uz/home/
+INFO 2025-07-16 18:29:07,110 home GET: {}
+INFO 2025-07-16 18:29:07,110 home POST: {}
+INFO 2025-07-16 18:29:07,110 home User: admin
+INFO 2025-07-16 18:29:07,110 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:07,110 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:07,110 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:12,612 home Yangi so‘rov:
+INFO 2025-07-16 18:29:12,612 home Method: GET
+INFO 2025-07-16 18:29:12,613 home URL: /uz/home/
+INFO 2025-07-16 18:29:12,613 home GET: {}
+INFO 2025-07-16 18:29:12,613 home POST: {}
+INFO 2025-07-16 18:29:12,613 home User: admin
+INFO 2025-07-16 18:29:12,613 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:12,613 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:12,613 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:13,468 home Yangi so‘rov:
+INFO 2025-07-16 18:29:13,468 home Method: GET
+INFO 2025-07-16 18:29:13,468 home URL: /uz/home/
+INFO 2025-07-16 18:29:13,468 home GET: {}
+INFO 2025-07-16 18:29:13,468 home POST: {}
+INFO 2025-07-16 18:29:13,468 home User: admin
+INFO 2025-07-16 18:29:13,468 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:13,468 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:13,468 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:14,316 home Yangi so‘rov:
+INFO 2025-07-16 18:29:14,316 home Method: GET
+INFO 2025-07-16 18:29:14,316 home URL: /uz/home/
+INFO 2025-07-16 18:29:14,316 home GET: {}
+INFO 2025-07-16 18:29:14,316 home POST: {}
+INFO 2025-07-16 18:29:14,316 home User: admin
+INFO 2025-07-16 18:29:14,316 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:14,316 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:14,316 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:15,044 home Yangi so‘rov:
+INFO 2025-07-16 18:29:15,044 home Method: GET
+INFO 2025-07-16 18:29:15,044 home URL: /uz/home/
+INFO 2025-07-16 18:29:15,044 home GET: {}
+INFO 2025-07-16 18:29:15,044 home POST: {}
+INFO 2025-07-16 18:29:15,044 home User: admin
+INFO 2025-07-16 18:29:15,044 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:15,044 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:15,044 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:16,037 home Yangi so‘rov:
+INFO 2025-07-16 18:29:16,037 home Method: GET
+INFO 2025-07-16 18:29:16,037 home URL: /uz/home/
+INFO 2025-07-16 18:29:16,037 home GET: {}
+INFO 2025-07-16 18:29:16,037 home POST: {}
+INFO 2025-07-16 18:29:16,037 home User: admin
+INFO 2025-07-16 18:29:16,037 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:16,037 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:16,037 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:16,924 home Yangi so‘rov:
+INFO 2025-07-16 18:29:16,924 home Method: GET
+INFO 2025-07-16 18:29:16,924 home URL: /uz/home/
+INFO 2025-07-16 18:29:16,924 home GET: {}
+INFO 2025-07-16 18:29:16,924 home POST: {}
+INFO 2025-07-16 18:29:16,924 home User: admin
+INFO 2025-07-16 18:29:16,924 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:16,924 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:16,924 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:17,990 home Yangi so‘rov:
+INFO 2025-07-16 18:29:17,990 home Method: GET
+INFO 2025-07-16 18:29:17,990 home URL: /uz/home/
+INFO 2025-07-16 18:29:17,990 home GET: {}
+INFO 2025-07-16 18:29:17,990 home POST: {}
+INFO 2025-07-16 18:29:17,990 home User: admin
+INFO 2025-07-16 18:29:17,990 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:17,990 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:17,990 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:19,004 home Yangi so‘rov:
+INFO 2025-07-16 18:29:19,004 home Method: GET
+INFO 2025-07-16 18:29:19,004 home URL: /uz/home/
+INFO 2025-07-16 18:29:19,005 home GET: {}
+INFO 2025-07-16 18:29:19,005 home POST: {}
+INFO 2025-07-16 18:29:19,005 home User: admin
+INFO 2025-07-16 18:29:19,005 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:19,005 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:19,005 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:19,869 home Yangi so‘rov:
+INFO 2025-07-16 18:29:19,869 home Method: GET
+INFO 2025-07-16 18:29:19,869 home URL: /uz/home/
+INFO 2025-07-16 18:29:19,869 home GET: {}
+INFO 2025-07-16 18:29:19,869 home POST: {}
+INFO 2025-07-16 18:29:19,869 home User: admin
+INFO 2025-07-16 18:29:19,869 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:19,869 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:19,869 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:20,677 home Yangi so‘rov:
+INFO 2025-07-16 18:29:20,677 home Method: GET
+INFO 2025-07-16 18:29:20,677 home URL: /uz/home/
+INFO 2025-07-16 18:29:20,677 home GET: {}
+INFO 2025-07-16 18:29:20,677 home POST: {}
+INFO 2025-07-16 18:29:20,677 home User: admin
+INFO 2025-07-16 18:29:20,677 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:20,677 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:20,677 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:21,476 home Yangi so‘rov:
+INFO 2025-07-16 18:29:21,476 home Method: GET
+INFO 2025-07-16 18:29:21,476 home URL: /uz/home/
+INFO 2025-07-16 18:29:21,476 home GET: {}
+INFO 2025-07-16 18:29:21,476 home POST: {}
+INFO 2025-07-16 18:29:21,476 home User: admin
+INFO 2025-07-16 18:29:21,476 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:21,477 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:21,477 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:22,837 home Yangi so‘rov:
+INFO 2025-07-16 18:29:22,837 home Method: GET
+INFO 2025-07-16 18:29:22,837 home URL: /uz/home/
+INFO 2025-07-16 18:29:22,837 home GET: {}
+INFO 2025-07-16 18:29:22,837 home POST: {}
+INFO 2025-07-16 18:29:22,837 home User: admin
+INFO 2025-07-16 18:29:22,837 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:22,837 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:22,837 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:52,117 home Yangi so‘rov:
+INFO 2025-07-16 18:29:52,117 home Method: GET
+INFO 2025-07-16 18:29:52,117 home URL: /uz/home/
+INFO 2025-07-16 18:29:52,117 home GET: {}
+INFO 2025-07-16 18:29:52,117 home POST: {}
+INFO 2025-07-16 18:29:52,117 home User: admin
+INFO 2025-07-16 18:29:52,117 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:52,117 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:52,117 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:53,150 home Yangi so‘rov:
+INFO 2025-07-16 18:29:53,150 home Method: GET
+INFO 2025-07-16 18:29:53,150 home URL: /uz/home/
+INFO 2025-07-16 18:29:53,150 home GET: {}
+INFO 2025-07-16 18:29:53,150 home POST: {}
+INFO 2025-07-16 18:29:53,150 home User: admin
+INFO 2025-07-16 18:29:53,150 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:53,150 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:53,150 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:54,086 home Yangi so‘rov:
+INFO 2025-07-16 18:29:54,086 home Method: GET
+INFO 2025-07-16 18:29:54,086 home URL: /uz/home/
+INFO 2025-07-16 18:29:54,086 home GET: {}
+INFO 2025-07-16 18:29:54,086 home POST: {}
+INFO 2025-07-16 18:29:54,086 home User: admin
+INFO 2025-07-16 18:29:54,086 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:54,086 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:54,086 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:55,229 home Yangi so‘rov:
+INFO 2025-07-16 18:29:55,230 home Method: GET
+INFO 2025-07-16 18:29:55,230 home URL: /uz/home/
+INFO 2025-07-16 18:29:55,230 home GET: {}
+INFO 2025-07-16 18:29:55,230 home POST: {}
+INFO 2025-07-16 18:29:55,230 home User: admin
+INFO 2025-07-16 18:29:55,230 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:55,230 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:55,230 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:55,965 home Yangi so‘rov:
+INFO 2025-07-16 18:29:55,965 home Method: GET
+INFO 2025-07-16 18:29:55,965 home URL: /uz/home/
+INFO 2025-07-16 18:29:55,965 home GET: {}
+INFO 2025-07-16 18:29:55,965 home POST: {}
+INFO 2025-07-16 18:29:55,965 home User: admin
+INFO 2025-07-16 18:29:55,965 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:55,965 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:55,965 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:29:56,965 home Yangi so‘rov:
+INFO 2025-07-16 18:29:56,965 home Method: GET
+INFO 2025-07-16 18:29:56,965 home URL: /uz/home/
+INFO 2025-07-16 18:29:56,965 home GET: {}
+INFO 2025-07-16 18:29:56,966 home POST: {}
+INFO 2025-07-16 18:29:56,966 home User: admin
+INFO 2025-07-16 18:29:56,966 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:29:56,966 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:29:56,966 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:21,397 home Yangi so‘rov:
+INFO 2025-07-16 18:30:21,397 home Method: GET
+INFO 2025-07-16 18:30:21,397 home URL: /uz/home/
+INFO 2025-07-16 18:30:21,397 home GET: {}
+INFO 2025-07-16 18:30:21,397 home POST: {}
+INFO 2025-07-16 18:30:21,397 home User: admin
+INFO 2025-07-16 18:30:21,397 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:21,397 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:21,397 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:22,293 home Yangi so‘rov:
+INFO 2025-07-16 18:30:22,293 home Method: GET
+INFO 2025-07-16 18:30:22,293 home URL: /uz/home/
+INFO 2025-07-16 18:30:22,293 home GET: {}
+INFO 2025-07-16 18:30:22,293 home POST: {}
+INFO 2025-07-16 18:30:22,293 home User: admin
+INFO 2025-07-16 18:30:22,293 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:22,293 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:22,293 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:33,004 home Yangi so‘rov:
+INFO 2025-07-16 18:30:33,004 home Method: GET
+INFO 2025-07-16 18:30:33,004 home URL: /uz/home/
+INFO 2025-07-16 18:30:33,004 home GET: {}
+INFO 2025-07-16 18:30:33,004 home POST: {}
+INFO 2025-07-16 18:30:33,004 home User: admin
+INFO 2025-07-16 18:30:33,004 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:33,004 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:33,004 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:33,764 home Yangi so‘rov:
+INFO 2025-07-16 18:30:33,764 home Method: GET
+INFO 2025-07-16 18:30:33,764 home URL: /uz/home/
+INFO 2025-07-16 18:30:33,764 home GET: {}
+INFO 2025-07-16 18:30:33,764 home POST: {}
+INFO 2025-07-16 18:30:33,764 home User: admin
+INFO 2025-07-16 18:30:33,764 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:33,765 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:33,765 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:34,492 home Yangi so‘rov:
+INFO 2025-07-16 18:30:34,492 home Method: GET
+INFO 2025-07-16 18:30:34,492 home URL: /uz/home/
+INFO 2025-07-16 18:30:34,492 home GET: {}
+INFO 2025-07-16 18:30:34,492 home POST: {}
+INFO 2025-07-16 18:30:34,492 home User: admin
+INFO 2025-07-16 18:30:34,492 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:34,492 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:34,492 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:38,446 home Yangi so‘rov:
+INFO 2025-07-16 18:30:38,446 home Method: GET
+INFO 2025-07-16 18:30:38,446 home URL: /uz/home/
+INFO 2025-07-16 18:30:38,446 home GET: {}
+INFO 2025-07-16 18:30:38,446 home POST: {}
+INFO 2025-07-16 18:30:38,446 home User: admin
+INFO 2025-07-16 18:30:38,446 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:38,446 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:38,446 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:50,356 home Yangi so‘rov:
+INFO 2025-07-16 18:30:50,356 home Method: GET
+INFO 2025-07-16 18:30:50,356 home URL: /uz/home/
+INFO 2025-07-16 18:30:50,356 home GET: {}
+INFO 2025-07-16 18:30:50,357 home POST: {}
+INFO 2025-07-16 18:30:50,357 home User: admin
+INFO 2025-07-16 18:30:50,357 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:50,357 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:50,357 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:51,220 home Yangi so‘rov:
+INFO 2025-07-16 18:30:51,220 home Method: GET
+INFO 2025-07-16 18:30:51,220 home URL: /uz/home/
+INFO 2025-07-16 18:30:51,220 home GET: {}
+INFO 2025-07-16 18:30:51,220 home POST: {}
+INFO 2025-07-16 18:30:51,220 home User: admin
+INFO 2025-07-16 18:30:51,220 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:51,220 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:51,220 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:52,061 home Yangi so‘rov:
+INFO 2025-07-16 18:30:52,061 home Method: GET
+INFO 2025-07-16 18:30:52,061 home URL: /uz/home/
+INFO 2025-07-16 18:30:52,061 home GET: {}
+INFO 2025-07-16 18:30:52,061 home POST: {}
+INFO 2025-07-16 18:30:52,061 home User: admin
+INFO 2025-07-16 18:30:52,061 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:52,061 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:52,061 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:30:52,797 home Yangi so‘rov:
+INFO 2025-07-16 18:30:52,797 home Method: GET
+INFO 2025-07-16 18:30:52,797 home URL: /uz/home/
+INFO 2025-07-16 18:30:52,797 home GET: {}
+INFO 2025-07-16 18:30:52,797 home POST: {}
+INFO 2025-07-16 18:30:52,797 home User: admin
+INFO 2025-07-16 18:30:52,797 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:30:52,797 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:30:52,797 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:31:35,973 home Yangi so‘rov:
+INFO 2025-07-16 18:31:35,973 home Method: GET
+INFO 2025-07-16 18:31:35,973 home URL: /uz/home/
+INFO 2025-07-16 18:31:35,973 home GET: {}
+INFO 2025-07-16 18:31:35,973 home POST: {}
+INFO 2025-07-16 18:31:35,973 home User: admin
+INFO 2025-07-16 18:31:35,973 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:31:35,973 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:31:35,973 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:31:36,868 home Yangi so‘rov:
+INFO 2025-07-16 18:31:36,868 home Method: GET
+INFO 2025-07-16 18:31:36,868 home URL: /uz/home/
+INFO 2025-07-16 18:31:36,868 home GET: {}
+INFO 2025-07-16 18:31:36,868 home POST: {}
+INFO 2025-07-16 18:31:36,868 home User: admin
+INFO 2025-07-16 18:31:36,868 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:31:36,868 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:31:36,868 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:31:43,620 home Yangi so‘rov:
+INFO 2025-07-16 18:31:43,620 home Method: GET
+INFO 2025-07-16 18:31:43,620 home URL: /uz/home/
+INFO 2025-07-16 18:31:43,620 home GET: {}
+INFO 2025-07-16 18:31:43,620 home POST: {}
+INFO 2025-07-16 18:31:43,620 home User: admin
+INFO 2025-07-16 18:31:43,620 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:31:43,620 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:31:43,620 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:31:56,924 home Yangi so‘rov:
+INFO 2025-07-16 18:31:56,924 home Method: GET
+INFO 2025-07-16 18:31:56,924 home URL: /uz/home/
+INFO 2025-07-16 18:31:56,924 home GET: {}
+INFO 2025-07-16 18:31:56,924 home POST: {}
+INFO 2025-07-16 18:31:56,924 home User: admin
+INFO 2025-07-16 18:31:56,924 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:31:56,924 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:31:56,924 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:31:57,684 home Yangi so‘rov:
+INFO 2025-07-16 18:31:57,684 home Method: GET
+INFO 2025-07-16 18:31:57,684 home URL: /uz/home/
+INFO 2025-07-16 18:31:57,684 home GET: {}
+INFO 2025-07-16 18:31:57,684 home POST: {}
+INFO 2025-07-16 18:31:57,684 home User: admin
+INFO 2025-07-16 18:31:57,684 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:31:57,684 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:31:57,684 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:33:33,447 home Yangi so‘rov:
+INFO 2025-07-16 18:33:33,447 home Method: GET
+INFO 2025-07-16 18:33:33,447 home URL: /uz/home/
+INFO 2025-07-16 18:33:33,447 home GET: {}
+INFO 2025-07-16 18:33:33,447 home POST: {}
+INFO 2025-07-16 18:33:33,447 home User: admin
+INFO 2025-07-16 18:33:33,447 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:33:33,447 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:33:33,447 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:33:35,924 home Yangi so‘rov:
+INFO 2025-07-16 18:33:35,924 home Method: GET
+INFO 2025-07-16 18:33:35,924 home URL: /uz/home/
+INFO 2025-07-16 18:33:35,924 home GET: {}
+INFO 2025-07-16 18:33:35,924 home POST: {}
+INFO 2025-07-16 18:33:35,924 home User: admin
+INFO 2025-07-16 18:33:35,925 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:33:35,925 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:33:35,925 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:33:37,155 home Yangi so‘rov:
+INFO 2025-07-16 18:33:37,156 home Method: GET
+INFO 2025-07-16 18:33:37,156 home URL: /uz/home/
+INFO 2025-07-16 18:33:37,156 home GET: {}
+INFO 2025-07-16 18:33:37,156 home POST: {}
+INFO 2025-07-16 18:33:37,156 home User: admin
+INFO 2025-07-16 18:33:37,156 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:33:37,156 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:33:37,156 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:33:38,387 home Yangi so‘rov:
+INFO 2025-07-16 18:33:38,387 home Method: GET
+INFO 2025-07-16 18:33:38,387 home URL: /uz/home/
+INFO 2025-07-16 18:33:38,387 home GET: {}
+INFO 2025-07-16 18:33:38,388 home POST: {}
+INFO 2025-07-16 18:33:38,388 home User: admin
+INFO 2025-07-16 18:33:38,388 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:33:38,388 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:33:38,388 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:33:40,164 home Yangi so‘rov:
+INFO 2025-07-16 18:33:40,164 home Method: GET
+INFO 2025-07-16 18:33:40,165 home URL: /uz/home/
+INFO 2025-07-16 18:33:40,165 home GET: {}
+INFO 2025-07-16 18:33:40,165 home POST: {}
+INFO 2025-07-16 18:33:40,165 home User: admin
+INFO 2025-07-16 18:33:40,165 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:33:40,165 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:33:40,165 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:33:41,636 home Yangi so‘rov:
+INFO 2025-07-16 18:33:41,636 home Method: GET
+INFO 2025-07-16 18:33:41,636 home URL: /uz/home/
+INFO 2025-07-16 18:33:41,636 home GET: {}
+INFO 2025-07-16 18:33:41,636 home POST: {}
+INFO 2025-07-16 18:33:41,636 home User: admin
+INFO 2025-07-16 18:33:41,636 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:33:41,637 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:33:41,637 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:33:42,948 home Yangi so‘rov:
+INFO 2025-07-16 18:33:42,948 home Method: GET
+INFO 2025-07-16 18:33:42,948 home URL: /uz/home/
+INFO 2025-07-16 18:33:42,948 home GET: {}
+INFO 2025-07-16 18:33:42,948 home POST: {}
+INFO 2025-07-16 18:33:42,948 home User: admin
+INFO 2025-07-16 18:33:42,948 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:33:42,948 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:33:42,948 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:33:44,581 home Yangi so‘rov:
+INFO 2025-07-16 18:33:44,581 home Method: GET
+INFO 2025-07-16 18:33:44,581 home URL: /uz/home/
+INFO 2025-07-16 18:33:44,581 home GET: {}
+INFO 2025-07-16 18:33:44,581 home POST: {}
+INFO 2025-07-16 18:33:44,581 home User: admin
+INFO 2025-07-16 18:33:44,581 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:33:44,581 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:33:44,581 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:34:12,148 home Yangi so‘rov:
+INFO 2025-07-16 18:34:12,148 home Method: GET
+INFO 2025-07-16 18:34:12,148 home URL: /uz/home/
+INFO 2025-07-16 18:34:12,148 home GET: {}
+INFO 2025-07-16 18:34:12,149 home POST: {}
+INFO 2025-07-16 18:34:12,149 home User: admin
+INFO 2025-07-16 18:34:12,149 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:34:12,149 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:34:12,149 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:34:13,091 home Yangi so‘rov:
+INFO 2025-07-16 18:34:13,092 home Method: GET
+INFO 2025-07-16 18:34:13,092 home URL: /uz/home/
+INFO 2025-07-16 18:34:13,092 home GET: {}
+INFO 2025-07-16 18:34:13,092 home POST: {}
+INFO 2025-07-16 18:34:13,092 home User: admin
+INFO 2025-07-16 18:34:13,092 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:34:13,092 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:34:13,092 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:34:50,893 home Yangi so‘rov:
+INFO 2025-07-16 18:34:50,893 home Method: GET
+INFO 2025-07-16 18:34:50,893 home URL: /uz/home/
+INFO 2025-07-16 18:34:50,893 home GET: {}
+INFO 2025-07-16 18:34:50,893 home POST: {}
+INFO 2025-07-16 18:34:50,893 home User: admin
+INFO 2025-07-16 18:34:50,893 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:34:50,893 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:34:50,893 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:34:52,308 home Yangi so‘rov:
+INFO 2025-07-16 18:34:52,308 home Method: GET
+INFO 2025-07-16 18:34:52,308 home URL: /uz/home/
+INFO 2025-07-16 18:34:52,308 home GET: {}
+INFO 2025-07-16 18:34:52,308 home POST: {}
+INFO 2025-07-16 18:34:52,308 home User: admin
+INFO 2025-07-16 18:34:52,308 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:34:52,308 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:34:52,308 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:35:00,852 home Yangi so‘rov:
+INFO 2025-07-16 18:35:00,852 home Method: GET
+INFO 2025-07-16 18:35:00,852 home URL: /uz/home/
+INFO 2025-07-16 18:35:00,852 home GET: {}
+INFO 2025-07-16 18:35:00,852 home POST: {}
+INFO 2025-07-16 18:35:00,852 home User: admin
+INFO 2025-07-16 18:35:00,852 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:35:00,852 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:35:00,852 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:35:02,475 home Yangi so‘rov:
+INFO 2025-07-16 18:35:02,476 home Method: GET
+INFO 2025-07-16 18:35:02,476 home URL: /uz/home/
+INFO 2025-07-16 18:35:02,476 home GET: {}
+INFO 2025-07-16 18:35:02,476 home POST: {}
+INFO 2025-07-16 18:35:02,476 home User: admin
+INFO 2025-07-16 18:35:02,476 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:35:02,476 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:35:02,476 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:35:19,036 home Yangi so‘rov:
+INFO 2025-07-16 18:35:19,036 home Method: GET
+INFO 2025-07-16 18:35:19,036 home URL: /uz/home/
+INFO 2025-07-16 18:35:19,036 home GET: {}
+INFO 2025-07-16 18:35:19,036 home POST: {}
+INFO 2025-07-16 18:35:19,036 home User: admin
+INFO 2025-07-16 18:35:19,036 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:35:19,037 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:35:19,037 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:35:29,644 home Yangi so‘rov:
+INFO 2025-07-16 18:35:29,644 home Method: GET
+INFO 2025-07-16 18:35:29,644 home URL: /uz/home/
+INFO 2025-07-16 18:35:29,644 home GET: {}
+INFO 2025-07-16 18:35:29,644 home POST: {}
+INFO 2025-07-16 18:35:29,644 home User: admin
+INFO 2025-07-16 18:35:29,644 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:35:29,644 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:35:29,644 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:35:41,300 home Yangi so‘rov:
+INFO 2025-07-16 18:35:41,300 home Method: GET
+INFO 2025-07-16 18:35:41,300 home URL: /uz/home/
+INFO 2025-07-16 18:35:41,300 home GET: {}
+INFO 2025-07-16 18:35:41,300 home POST: {}
+INFO 2025-07-16 18:35:41,300 home User: admin
+INFO 2025-07-16 18:35:41,300 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:35:41,300 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:35:41,300 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:35:43,940 home Yangi so‘rov:
+INFO 2025-07-16 18:35:43,940 home Method: GET
+INFO 2025-07-16 18:35:43,940 home URL: /uz/home/
+INFO 2025-07-16 18:35:43,940 home GET: {}
+INFO 2025-07-16 18:35:43,940 home POST: {}
+INFO 2025-07-16 18:35:43,940 home User: admin
+INFO 2025-07-16 18:35:43,940 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:35:43,940 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:35:43,940 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:48:18,295 home Yangi so‘rov:
+INFO 2025-07-16 18:48:18,295 home Method: GET
+INFO 2025-07-16 18:48:18,295 home URL: /uz/home/
+INFO 2025-07-16 18:48:18,295 home GET: {}
+INFO 2025-07-16 18:48:18,295 home POST: {}
+INFO 2025-07-16 18:48:18,295 home User: admin
+INFO 2025-07-16 18:48:18,295 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:48:18,295 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:48:18,295 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:49:36,959 home Yangi so‘rov:
+INFO 2025-07-16 18:49:36,959 home Method: GET
+INFO 2025-07-16 18:49:36,959 home URL: /uz/home/
+INFO 2025-07-16 18:49:36,959 home GET: {}
+INFO 2025-07-16 18:49:36,959 home POST: {}
+INFO 2025-07-16 18:49:36,959 home User: admin
+INFO 2025-07-16 18:49:36,959 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:49:36,959 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:49:36,959 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:49:39,085 home Yangi so‘rov:
+INFO 2025-07-16 18:49:39,085 home Method: GET
+INFO 2025-07-16 18:49:39,086 home URL: /uz/home/
+INFO 2025-07-16 18:49:39,086 home GET: {}
+INFO 2025-07-16 18:49:39,086 home POST: {}
+INFO 2025-07-16 18:49:39,086 home User: admin
+INFO 2025-07-16 18:49:39,086 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:49:39,086 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:49:39,086 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:49:48,682 home Yangi so‘rov:
+INFO 2025-07-16 18:49:48,682 home Method: GET
+INFO 2025-07-16 18:49:48,683 home URL: /uz/home/
+INFO 2025-07-16 18:49:48,683 home GET: {}
+INFO 2025-07-16 18:49:48,683 home POST: {}
+INFO 2025-07-16 18:49:48,683 home User: admin
+INFO 2025-07-16 18:49:48,683 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:49:48,683 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:49:48,683 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:49:50,179 home Yangi so‘rov:
+INFO 2025-07-16 18:49:50,179 home Method: GET
+INFO 2025-07-16 18:49:50,179 home URL: /uz/home/
+INFO 2025-07-16 18:49:50,179 home GET: {}
+INFO 2025-07-16 18:49:50,179 home POST: {}
+INFO 2025-07-16 18:49:50,179 home User: admin
+INFO 2025-07-16 18:49:50,179 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:49:50,179 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:49:50,179 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:49:51,347 home Yangi so‘rov:
+INFO 2025-07-16 18:49:51,347 home Method: GET
+INFO 2025-07-16 18:49:51,347 home URL: /uz/home/
+INFO 2025-07-16 18:49:51,347 home GET: {}
+INFO 2025-07-16 18:49:51,347 home POST: {}
+INFO 2025-07-16 18:49:51,347 home User: admin
+INFO 2025-07-16 18:49:51,347 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:49:51,347 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:49:51,347 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:49:59,022 home Yangi so‘rov:
+INFO 2025-07-16 18:49:59,022 home Method: GET
+INFO 2025-07-16 18:49:59,022 home URL: /uz/home/
+INFO 2025-07-16 18:49:59,022 home GET: {}
+INFO 2025-07-16 18:49:59,022 home POST: {}
+INFO 2025-07-16 18:49:59,022 home User: admin
+INFO 2025-07-16 18:49:59,022 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:49:59,022 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:49:59,023 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:50:15,925 home Yangi so‘rov:
+INFO 2025-07-16 18:50:15,926 home Method: GET
+INFO 2025-07-16 18:50:15,926 home URL: /uz/home/
+INFO 2025-07-16 18:50:15,926 home GET: {}
+INFO 2025-07-16 18:50:15,926 home POST: {}
+INFO 2025-07-16 18:50:15,926 home User: admin
+INFO 2025-07-16 18:50:15,926 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:50:15,926 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:50:15,926 home ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:52:42,995 home Yangi so‘rov:
+INFO 2025-07-16 18:52:42,996 home Method: GET
+INFO 2025-07-16 18:52:42,996 home URL: /uz/home/
+INFO 2025-07-16 18:52:42,996 home GET: {}
+INFO 2025-07-16 18:52:42,996 home POST: {}
+INFO 2025-07-16 18:52:42,996 home User: admin
+INFO 2025-07-16 18:52:42,996 home IP Address: 192.168.30.18
+INFO 2025-07-16 18:52:42,996 home User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:52:42,996 home ------------------------------------------------------------------------------------------------------------------------------------------------------

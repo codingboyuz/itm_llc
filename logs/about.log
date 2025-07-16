@@ -221,3 +221,66 @@ INFO 2025-07-16 15:12:45,872 about User: admin
 INFO 2025-07-16 15:12:45,872 about IP Address: 192.168.30.18
 INFO 2025-07-16 15:12:45,872 about User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 INFO 2025-07-16 15:12:45,872 about ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 15:32:14,568 about Yangi so‘rov:
+INFO 2025-07-16 15:32:14,568 about Method: GET
+INFO 2025-07-16 15:32:14,568 about URL: /uz/about/
+INFO 2025-07-16 15:32:14,568 about GET: {}
+INFO 2025-07-16 15:32:14,568 about POST: {}
+INFO 2025-07-16 15:32:14,568 about User: admin
+INFO 2025-07-16 15:32:14,568 about IP Address: 192.168.30.18
+INFO 2025-07-16 15:32:14,568 about User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 15:32:14,568 about ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:19:13,328 about Yangi so‘rov:
+INFO 2025-07-16 18:19:13,328 about Method: GET
+INFO 2025-07-16 18:19:13,328 about URL: /uz/about/
+INFO 2025-07-16 18:19:13,328 about GET: {}
+INFO 2025-07-16 18:19:13,328 about POST: {}
+INFO 2025-07-16 18:19:13,328 about User: admin
+INFO 2025-07-16 18:19:13,328 about IP Address: 192.168.30.18
+INFO 2025-07-16 18:19:13,328 about User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:19:13,328 about ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:20:39,120 about Yangi so‘rov:
+INFO 2025-07-16 18:20:39,120 about Method: GET
+INFO 2025-07-16 18:20:39,120 about URL: /uz/about/
+INFO 2025-07-16 18:20:39,120 about GET: {}
+INFO 2025-07-16 18:20:39,120 about POST: {}
+INFO 2025-07-16 18:20:39,120 about User: admin
+INFO 2025-07-16 18:20:39,120 about IP Address: 192.168.30.18
+INFO 2025-07-16 18:20:39,120 about User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:20:39,120 about ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:22:10,461 about Yangi so‘rov:
+INFO 2025-07-16 18:22:10,461 about Method: GET
+INFO 2025-07-16 18:22:10,461 about URL: /uz/about/
+INFO 2025-07-16 18:22:10,461 about GET: {}
+INFO 2025-07-16 18:22:10,461 about POST: {}
+INFO 2025-07-16 18:22:10,461 about User: Anonymous
+INFO 2025-07-16 18:22:10,461 about IP Address: 192.168.30.18
+INFO 2025-07-16 18:22:10,462 about User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:22:10,462 about ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:36:18,919 about Yangi so‘rov:
+INFO 2025-07-16 18:36:18,919 about Method: GET
+INFO 2025-07-16 18:36:18,919 about URL: /uz/about/
+INFO 2025-07-16 18:36:18,919 about GET: {}
+INFO 2025-07-16 18:36:18,919 about POST: {}
+INFO 2025-07-16 18:36:18,919 about User: admin
+INFO 2025-07-16 18:36:18,919 about IP Address: 192.168.30.18
+INFO 2025-07-16 18:36:18,919 about User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:36:18,919 about ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:48:28,566 about Yangi so‘rov:
+INFO 2025-07-16 18:48:28,566 about Method: GET
+INFO 2025-07-16 18:48:28,566 about URL: /uz/about/
+INFO 2025-07-16 18:48:28,566 about GET: {}
+INFO 2025-07-16 18:48:28,566 about POST: {}
+INFO 2025-07-16 18:48:28,566 about User: admin
+INFO 2025-07-16 18:48:28,566 about IP Address: 192.168.30.18
+INFO 2025-07-16 18:48:28,566 about User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:48:28,566 about ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 18:49:52,165 about Yangi so‘rov:
+INFO 2025-07-16 18:49:52,165 about Method: GET
+INFO 2025-07-16 18:49:52,165 about URL: /uz/about/
+INFO 2025-07-16 18:49:52,165 about GET: {}
+INFO 2025-07-16 18:49:52,165 about POST: {}
+INFO 2025-07-16 18:49:52,166 about User: admin
+INFO 2025-07-16 18:49:52,166 about IP Address: 192.168.30.18
+INFO 2025-07-16 18:49:52,166 about User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 18:49:52,166 about ------------------------------------------------------------------------------------------------------------------------------------------------------
