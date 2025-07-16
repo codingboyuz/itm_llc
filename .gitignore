@@ -11,7 +11,7 @@ __pycache__/
 # VSCode
 .vscode/
 
-/media/videos/web.mp4
+# /media/videos/web.mp4
 /logs/about.log
 /logs/home.log
 /logs/news.log
