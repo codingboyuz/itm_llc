@@ -6,9 +6,6 @@ from .models import ProductModel, ProductCategory, ProductField
 class ProductModelTranslationOptions(TranslationOptions):
     fields = ('name', 'description')  # Fields you want to translate
 
-@register(ProductCategory)
-class ProductCategoryTranslationOptions(TranslationOptions):
-    fields = ('name', 'verbose_name')
 
 @register(ProductField)
 class ProductFieldTranslationOptions(TranslationOptions):

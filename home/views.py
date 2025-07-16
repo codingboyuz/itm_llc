@@ -12,15 +12,17 @@ class HomePage(View):
         try:
             partners = PartnersModel.objects.all()
             products = ProductModel.objects.prefetch_related("images").order_by('?')[:6]
-            news = NewsModel.objects.filter(is_active=True).last()
+            news = NewsModel.objects.filter(is_active=False).last()
             about = AboutModel.objects.all().first()
 
             print(f"news=================={news}")
-            print(f"products=================={products}")
+            # print(f"products=================={products.first.title}")
+            for p in products:
+                print(p.category)
             print(f"partners=================={partners}")
             print(f"about=================={about.title}")
 
-            if news and about:
+            if partners:
                 context = {
                     'partners': partners,
                     'products': products,

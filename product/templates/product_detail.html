@@ -1,59 +1,82 @@
-{% extends 'base.html' %}
-{% load i18n %}
-{% block content %}
+{% extends 'base.html' %} {% load i18n %} {% block content %}
 
 <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
-    <div class="layout-content-container flex flex-col w-full max-w-[960px]">
-
-        <!-- Breadcrumb -->
-        <div class="flex flex-wrap gap-2 p-4">
-            <a class="text-[#a6b3a2] text-base font-medium leading-normal" href="{% url 'products' %}"> {% blocktrans %} Products {% endblocktrans %}</a>
-            <span class="text-[#a6b3a2] text-base font-medium leading-normal">/</span>
-            <span class="text-white text-base font-medium leading-normal">{{ product.name }}</span>
-        </div>
-
-        <!-- Title & Description -->
-        <div class="flex flex-wrap justify-between gap-3 p-4">
-            <div class="flex min-w-72 flex-col gap-3">
-                <p class="text-white tracking-light text-[32px] font-bold leading-tight">{{ product.name }}</p>
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">{{ product.description }}</p>
-            </div>
-        </div>
-        <!-- Images -->
-        <div class="flex flex-col-reverse md:flex-row w-full bg-[#131612] p-4 gap-4">
-            
-            <!-- Thumbnails -->
-            <div class="flex md:flex-col flex-row gap-2 md:w-[80px] justify-center">
-                {% for img in images %}
-                <img src="{{ img.image.url }}"
-                    alt="Thumbnail"
-                    class="w-[80px] h-[80px] object-cover cursor-pointer border border-gray-600 rounded hover:opacity-80"
-                    onclick="showImage('{{ img.image.url }}')">
-                {% endfor %}
-            </div>
-
-            <!-- Main Image -->
-            <div class="flex-1 flex justify-center">
-                <img id="main-image"
-                    src="{% if images %}{{ images.0.image.url }}{% endif %}"
-                    class="max-w-full rounded cursor-pointer"
-                    onclick="openFullscreen(this)">
-            </div>
-        </div>
-
-        <!-- Specifications -->
-        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-            {% blocktrans %} Specifications {% endblocktrans %} </h2>
-        <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-            {% for field in fields %}
-            <div class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pr-2">
-                <p class="text-[#a6b3a2] text-sm font-normal leading-normal">{{ field.key }}</p>
-                <p class="text-white text-sm font-normal leading-normal">{{ field.value }}</p>
-            </div>
-            {% endfor %}
-        </div>      
-
+  <div class="layout-content-container flex flex-col w-full max-w-[960px]">
+    <!-- Breadcrumb -->
+    <div class="flex flex-wrap gap-2 p-4">
+      <a
+        class="text-[#a6b3a2] text-base font-medium leading-normal"
+        href="{% url 'products' %}"
+      >
+        {% blocktrans %} Products {% endblocktrans %}</a
+      >
+      <span class="text-[#a6b3a2] text-base font-medium leading-normal">/</span>
+      <span class="text-white text-base font-medium leading-normal"
+        >{{ product.name }}</span
+      >
     </div>
+
+    <!-- Title & Description -->
+    <div class="flex flex-wrap justify-between gap-3 p-4">
+      <div class="flex min-w-72 flex-col gap-3">
+        <p
+          class="text-white tracking-light text-[32px] font-bold leading-tight"
+        >
+          {{ product.name }}
+        </p>
+        <p class="text-[#a6b3a2] text-sm font-normal leading-normal">
+          {{ product.description }}
+        </p>
+      </div>
+    </div>
+    <!-- Images -->
+    <div
+      class="flex flex-col-reverse md:flex-row w-full bg-[#131612] p-4 gap-4"
+    >
+      <!-- Thumbnails -->
+      <div class="flex md:flex-col flex-row gap-2 md:w-[80px] justify-center">
+        {% for img in images %}
+        <img
+          src="{{ img.image.url }}"
+          alt="Thumbnail"
+          class="w-[80px] h-[80px] object-cover cursor-pointer border border-gray-600 rounded hover:opacity-80"
+          onclick="showImage('{{ img.image.url }}')"
+        />
+        {% endfor %}
+      </div>
+
+      <!-- Main Image -->
+      <div class="flex-1 flex justify-center">
+        <img
+          id="main-image"
+          src="{% if images %}{{ images.0.image.url }}{% endif %}"
+          class="w-full max-w-md h-auto rounded cursor-pointer object-contain"
+          onclick="openFullscreen(this)"
+        />
+      </div>
+    </div>
+
+    <!-- Specifications -->
+    <h2
+      class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+    >
+      {% blocktrans %} Specifications {% endblocktrans %}
+    </h2>
+    <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+      {% for field in fields %}
+      <div
+        class="flex flex-col gap-1 border-t border-solid border-t-[#434f40] py-4 pr-2"
+      >
+        <p class="text-[#a6b3a2] text-sm font-normal leading-normal">
+          {{ field.key }}
+        </p>
+        <p class="text-white text-sm font-normal leading-normal">
+          {{ field.value }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 {% endblock %}

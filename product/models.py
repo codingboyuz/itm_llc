@@ -15,7 +15,7 @@ class ProductCategory(models.Model):
 
 class ProductModel(BaseModel):
     name = models.CharField(max_length=300)
-    description = models.TextField()
+    description = models.TextField(null=True,blank=True)
     category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

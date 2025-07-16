@@ -76,20 +76,23 @@
           data-aos="zoom-in"
         >
           <div
-            class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+            class="w-full bg-center bg-no-repeat aspect-video bg-contain rounded-lg flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
             style='background-image: url("{{ product.images.first.image.url }}");'
           ></div>
           <div>
             <p
-              class="text-white text-sm sm:text-base font-medium leading-normal"
+              class="text-white text-sm sm:text-base font-medium leading-normal pb-7"
             >
-              {{ product.title }}
+              {{ product.name }}
             </p>
+
+            {% if product.description %}
             <p
               class="text-[#a5b6a0] text-xs sm:text-sm font-normal leading-normal"
             >
               {{ product.description }}
             </p>
+            {% endif %}
           </div>
         </div>
         {% endfor %}
@@ -97,27 +100,29 @@
     </div>
 
     <!-- Our Partners Section -->
-    <h2
-      class="text-white text-lg sm:text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 py-5"
-      data-aos="fade-up"
-    >
-      {% blocktrans %}Our Partners{% endblocktrans %}
-    </h2>
-    <div
-      class="grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-3 p-4"
-    >
-      {% for partner in partners %}
-      <div
-        class="overflow-hidden rounded-lg bg-white aspect-square flex items-center justify-center p-2"
-        data-aos="zoom-in"
+    <div>
+      <h2
+        class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] mb-5"
+        data-aos="fade-up"
       >
-        <img
-          src="{{ partner.image.url }}"
-          alt="partner"
-          class="object-contain w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
-        />
+        {% blocktrans %}Our Partners{% endblocktrans %}
+      </h2>
+
+      <div class="swiper mySwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          {% for img in partners %}
+          <div
+            class="swiper-slide overflow-hidden rounded-lg bg-white aspect-square flex items-center justify-center p-2"
+          >
+            <img
+              src="{{img.image.url}}"
+              class="object-contain w-full h-full transition-transform duration-300 ease-in-out hover:scale-105"
+              alt="sertifikat"
+            />
+          </div>
+          {% endfor %}
+        </div>
       </div>
-      {% endfor %}
     </div>
   </div>
 </div>

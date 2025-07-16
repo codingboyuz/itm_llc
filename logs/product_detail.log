@@ -1,0 +1,189 @@
+INFO 2025-07-16 12:08:43,665 product_detail Yangi so‘rov:
+INFO 2025-07-16 12:08:43,665 product_detail Method: GET
+INFO 2025-07-16 12:08:43,665 product_detail URL: /uz/products/1/
+INFO 2025-07-16 12:08:43,665 product_detail GET: {}
+INFO 2025-07-16 12:08:43,665 product_detail POST: {}
+INFO 2025-07-16 12:08:43,665 product_detail User: admin
+INFO 2025-07-16 12:08:43,665 product_detail IP Address: 127.0.0.1
+INFO 2025-07-16 12:08:43,665 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 12:08:43,665 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 12:09:00,903 product_detail Yangi so‘rov:
+INFO 2025-07-16 12:09:00,903 product_detail Method: GET
+INFO 2025-07-16 12:09:00,903 product_detail URL: /en/products/1/
+INFO 2025-07-16 12:09:00,903 product_detail GET: {}
+INFO 2025-07-16 12:09:00,903 product_detail POST: {}
+INFO 2025-07-16 12:09:00,903 product_detail User: admin
+INFO 2025-07-16 12:09:00,903 product_detail IP Address: 127.0.0.1
+INFO 2025-07-16 12:09:00,903 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 12:09:00,903 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 12:09:07,680 product_detail Yangi so‘rov:
+INFO 2025-07-16 12:09:07,680 product_detail Method: GET
+INFO 2025-07-16 12:09:07,680 product_detail URL: /ru/products/1/
+INFO 2025-07-16 12:09:07,680 product_detail GET: {}
+INFO 2025-07-16 12:09:07,680 product_detail POST: {}
+INFO 2025-07-16 12:09:07,680 product_detail User: admin
+INFO 2025-07-16 12:09:07,680 product_detail IP Address: 127.0.0.1
+INFO 2025-07-16 12:09:07,681 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 12:09:07,681 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 12:10:17,383 product_detail Yangi so‘rov:
+INFO 2025-07-16 12:10:17,384 product_detail Method: GET
+INFO 2025-07-16 12:10:17,384 product_detail URL: /en/products/1/
+INFO 2025-07-16 12:10:17,384 product_detail GET: {}
+INFO 2025-07-16 12:10:17,384 product_detail POST: {}
+INFO 2025-07-16 12:10:17,384 product_detail User: admin
+INFO 2025-07-16 12:10:17,384 product_detail IP Address: 127.0.0.1
+INFO 2025-07-16 12:10:17,384 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 12:10:17,384 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 12:17:59,542 product_detail Yangi so‘rov:
+INFO 2025-07-16 12:17:59,542 product_detail Method: GET
+INFO 2025-07-16 12:17:59,542 product_detail URL: /en/products/1/
+INFO 2025-07-16 12:17:59,542 product_detail GET: {}
+INFO 2025-07-16 12:17:59,542 product_detail POST: {}
+INFO 2025-07-16 12:17:59,542 product_detail User: admin
+INFO 2025-07-16 12:17:59,542 product_detail IP Address: 127.0.0.1
+INFO 2025-07-16 12:17:59,542 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 12:17:59,542 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 12:23:55,870 product_detail Yangi so‘rov:
+INFO 2025-07-16 12:23:55,870 product_detail Method: GET
+INFO 2025-07-16 12:23:55,870 product_detail URL: /en/products/1/
+INFO 2025-07-16 12:23:55,870 product_detail GET: {}
+INFO 2025-07-16 12:23:55,870 product_detail POST: {}
+INFO 2025-07-16 12:23:55,870 product_detail User: admin
+INFO 2025-07-16 12:23:55,870 product_detail IP Address: 127.0.0.1
+INFO 2025-07-16 12:23:55,870 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 12:23:55,870 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 12:23:56,614 product_detail Yangi so‘rov:
+INFO 2025-07-16 12:23:56,614 product_detail Method: GET
+INFO 2025-07-16 12:23:56,614 product_detail URL: /en/products/1/
+INFO 2025-07-16 12:23:56,614 product_detail GET: {}
+INFO 2025-07-16 12:23:56,614 product_detail POST: {}
+INFO 2025-07-16 12:23:56,614 product_detail User: admin
+INFO 2025-07-16 12:23:56,614 product_detail IP Address: 127.0.0.1
+INFO 2025-07-16 12:23:56,614 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 12:23:56,614 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:00:52,519 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:00:52,520 product_detail Method: GET
+INFO 2025-07-16 14:00:52,520 product_detail URL: /uz/products/2/
+INFO 2025-07-16 14:00:52,520 product_detail GET: {}
+INFO 2025-07-16 14:00:52,520 product_detail POST: {}
+INFO 2025-07-16 14:00:52,520 product_detail User: admin
+INFO 2025-07-16 14:00:52,520 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:00:52,520 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:00:52,520 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:02:59,348 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:02:59,348 product_detail Method: GET
+INFO 2025-07-16 14:02:59,348 product_detail URL: /uz/products/2/
+INFO 2025-07-16 14:02:59,348 product_detail GET: {}
+INFO 2025-07-16 14:02:59,348 product_detail POST: {}
+INFO 2025-07-16 14:02:59,348 product_detail User: admin
+INFO 2025-07-16 14:02:59,348 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:02:59,348 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:02:59,348 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:03:08,102 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:03:08,102 product_detail Method: GET
+INFO 2025-07-16 14:03:08,102 product_detail URL: /en/products/2/
+INFO 2025-07-16 14:03:08,102 product_detail GET: {}
+INFO 2025-07-16 14:03:08,102 product_detail POST: {}
+INFO 2025-07-16 14:03:08,102 product_detail User: admin
+INFO 2025-07-16 14:03:08,102 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:03:08,102 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:03:08,102 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:03:15,491 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:03:15,491 product_detail Method: GET
+INFO 2025-07-16 14:03:15,491 product_detail URL: /ru/products/2/
+INFO 2025-07-16 14:03:15,491 product_detail GET: {}
+INFO 2025-07-16 14:03:15,491 product_detail POST: {}
+INFO 2025-07-16 14:03:15,491 product_detail User: admin
+INFO 2025-07-16 14:03:15,492 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:03:15,492 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:03:15,492 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:03:23,334 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:03:23,334 product_detail Method: GET
+INFO 2025-07-16 14:03:23,334 product_detail URL: /uz/products/2/
+INFO 2025-07-16 14:03:23,334 product_detail GET: {}
+INFO 2025-07-16 14:03:23,334 product_detail POST: {}
+INFO 2025-07-16 14:03:23,335 product_detail User: admin
+INFO 2025-07-16 14:03:23,335 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:03:23,335 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:03:23,335 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:15:54,643 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:15:54,643 product_detail Method: GET
+INFO 2025-07-16 14:15:54,644 product_detail URL: /uz/products/2/
+INFO 2025-07-16 14:15:54,644 product_detail GET: {}
+INFO 2025-07-16 14:15:54,644 product_detail POST: {}
+INFO 2025-07-16 14:15:54,644 product_detail User: admin
+INFO 2025-07-16 14:15:54,644 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:15:54,644 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:15:54,644 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:18:22,991 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:18:22,991 product_detail Method: GET
+INFO 2025-07-16 14:18:22,991 product_detail URL: /uz/products/3/
+INFO 2025-07-16 14:18:22,991 product_detail GET: {}
+INFO 2025-07-16 14:18:22,991 product_detail POST: {}
+INFO 2025-07-16 14:18:22,991 product_detail User: admin
+INFO 2025-07-16 14:18:22,991 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:18:22,991 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:18:22,991 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:19:07,291 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:19:07,291 product_detail Method: GET
+INFO 2025-07-16 14:19:07,291 product_detail URL: /uz/products/3/
+INFO 2025-07-16 14:19:07,291 product_detail GET: {}
+INFO 2025-07-16 14:19:07,291 product_detail POST: {}
+INFO 2025-07-16 14:19:07,291 product_detail User: admin
+INFO 2025-07-16 14:19:07,291 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:19:07,291 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:19:07,291 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:20:38,685 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:20:38,685 product_detail Method: GET
+INFO 2025-07-16 14:20:38,685 product_detail URL: /uz/products/3/
+INFO 2025-07-16 14:20:38,685 product_detail GET: {}
+INFO 2025-07-16 14:20:38,685 product_detail POST: {}
+INFO 2025-07-16 14:20:38,685 product_detail User: admin
+INFO 2025-07-16 14:20:38,685 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:20:38,685 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:20:38,685 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:21:53,276 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:21:53,276 product_detail Method: GET
+INFO 2025-07-16 14:21:53,276 product_detail URL: /uz/products/3/
+INFO 2025-07-16 14:21:53,276 product_detail GET: {}
+INFO 2025-07-16 14:21:53,276 product_detail POST: {}
+INFO 2025-07-16 14:21:53,276 product_detail User: admin
+INFO 2025-07-16 14:21:53,276 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:21:53,276 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:21:53,276 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:21:55,220 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:21:55,220 product_detail Method: GET
+INFO 2025-07-16 14:21:55,220 product_detail URL: /uz/products/3/
+INFO 2025-07-16 14:21:55,220 product_detail GET: {}
+INFO 2025-07-16 14:21:55,220 product_detail POST: {}
+INFO 2025-07-16 14:21:55,220 product_detail User: admin
+INFO 2025-07-16 14:21:55,220 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:21:55,220 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:21:55,220 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:22:50,684 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:22:50,684 product_detail Method: GET
+INFO 2025-07-16 14:22:50,684 product_detail URL: /uz/products/3/
+INFO 2025-07-16 14:22:50,684 product_detail GET: {}
+INFO 2025-07-16 14:22:50,684 product_detail POST: {}
+INFO 2025-07-16 14:22:50,684 product_detail User: admin
+INFO 2025-07-16 14:22:50,684 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:22:50,684 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:22:50,684 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:23:22,043 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:23:22,043 product_detail Method: GET
+INFO 2025-07-16 14:23:22,043 product_detail URL: /uz/products/3/
+INFO 2025-07-16 14:23:22,043 product_detail GET: {}
+INFO 2025-07-16 14:23:22,043 product_detail POST: {}
+INFO 2025-07-16 14:23:22,043 product_detail User: admin
+INFO 2025-07-16 14:23:22,043 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:23:22,043 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:23:22,043 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:23:42,442 product_detail Yangi so‘rov:
+INFO 2025-07-16 14:23:42,442 product_detail Method: GET
+INFO 2025-07-16 14:23:42,442 product_detail URL: /uz/products/3/
+INFO 2025-07-16 14:23:42,442 product_detail GET: {}
+INFO 2025-07-16 14:23:42,442 product_detail POST: {}
+INFO 2025-07-16 14:23:42,442 product_detail User: admin
+INFO 2025-07-16 14:23:42,442 product_detail IP Address: 192.168.30.18
+INFO 2025-07-16 14:23:42,442 product_detail User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:23:42,442 product_detail ------------------------------------------------------------------------------------------------------------------------------------------------------

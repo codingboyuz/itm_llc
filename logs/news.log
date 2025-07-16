@@ -7,3 +7,48 @@ INFO 2025-07-14 17:34:01,592 news User: admin
 INFO 2025-07-14 17:34:01,592 news IP Address: 127.0.0.1
 INFO 2025-07-14 17:34:01,592 news User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
 INFO 2025-07-14 17:34:01,592 news ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 11:46:05,732 news Yangi so‘rov:
+INFO 2025-07-16 11:46:05,732 news Method: GET
+INFO 2025-07-16 11:46:05,732 news URL: /uz/news/
+INFO 2025-07-16 11:46:05,732 news GET: {}
+INFO 2025-07-16 11:46:05,732 news POST: {}
+INFO 2025-07-16 11:46:05,732 news User: admin
+INFO 2025-07-16 11:46:05,732 news IP Address: 127.0.0.1
+INFO 2025-07-16 11:46:05,732 news User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 11:46:05,732 news ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 11:46:41,072 news Yangi so‘rov:
+INFO 2025-07-16 11:46:41,072 news Method: GET
+INFO 2025-07-16 11:46:41,073 news URL: /uz/news/
+INFO 2025-07-16 11:46:41,073 news GET: {}
+INFO 2025-07-16 11:46:41,073 news POST: {}
+INFO 2025-07-16 11:46:41,073 news User: admin
+INFO 2025-07-16 11:46:41,073 news IP Address: 127.0.0.1
+INFO 2025-07-16 11:46:41,073 news User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 11:46:41,073 news ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 11:47:19,011 news Yangi so‘rov:
+INFO 2025-07-16 11:47:19,011 news Method: GET
+INFO 2025-07-16 11:47:19,011 news URL: /uz/news/
+INFO 2025-07-16 11:47:19,011 news GET: {}
+INFO 2025-07-16 11:47:19,011 news POST: {}
+INFO 2025-07-16 11:47:19,011 news User: admin
+INFO 2025-07-16 11:47:19,011 news IP Address: 127.0.0.1
+INFO 2025-07-16 11:47:19,011 news User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 11:47:19,011 news ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 13:40:17,532 news Yangi so‘rov:
+INFO 2025-07-16 13:40:17,532 news Method: GET
+INFO 2025-07-16 13:40:17,532 news URL: /uz/news/
+INFO 2025-07-16 13:40:17,532 news GET: {}
+INFO 2025-07-16 13:40:17,532 news POST: {}
+INFO 2025-07-16 13:40:17,532 news User: Anonymous
+INFO 2025-07-16 13:40:17,532 news IP Address: 192.168.30.41
+INFO 2025-07-16 13:40:17,533 news User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 13:40:17,533 news ------------------------------------------------------------------------------------------------------------------------------------------------------
+INFO 2025-07-16 14:59:34,098 news Yangi so‘rov:
+INFO 2025-07-16 14:59:34,099 news Method: GET
+INFO 2025-07-16 14:59:34,099 news URL: /uz/news/
+INFO 2025-07-16 14:59:34,099 news GET: {}
+INFO 2025-07-16 14:59:34,099 news POST: {}
+INFO 2025-07-16 14:59:34,099 news User: admin
+INFO 2025-07-16 14:59:34,099 news IP Address: 192.168.30.18
+INFO 2025-07-16 14:59:34,099 news User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+INFO 2025-07-16 14:59:34,099 news ------------------------------------------------------------------------------------------------------------------------------------------------------

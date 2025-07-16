@@ -4,39 +4,64 @@
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE|default:'uz' }}">
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO -->
+  <meta name="description" content="ITM-LLC – Innovatsion texnologiyalar va mahsulotlar ishlab chiqaruvchisi">
+  <meta name="keywords" content="ITM, texnologiya, mahsulotlar, sertifikat, Uzbekistan, ishlab chiqarish">
+  <meta name="author" content="ITM-LLC">
 
-    <title>ITM-LLC</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  <!-- Open Graph (for Facebook & other social platforms) -->
+  <meta property="og:title" content="ITM-LLC" />
+  <meta property="og:description" content="Innovatsion texnologiyalar va mahsulotlar ishlab chiqaruvchisi" />
+  <meta property="og:image" content="{% static 'image/logooq.png' %}" />
+  <meta property="og:url" content="https://itm-llc.uz/" />
+  <meta property="og:type" content="website" />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <!-- Head qismiga -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ITM-LLC">
+  <meta name="twitter:description" content="Innovatsion texnologiyalar va mahsulotlar ishlab chiqaruvchisi">
+  <meta name="twitter:image" content="{% static 'image/logooq.png' %}">
 
-    <!-- Body oxirida -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <title>{% block title %}ITM-LLC{% endblock %}</title>
 
-    <style>
-        .language-selector {
-            min-width: 120px;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-        }
-        .language-selector option {
-            font-size: 1rem;
-            padding: 0.5rem;
-        }
-    </style>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{% static 'image/favicon.png' %}" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Manrope:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900" />
+
+  <!-- AOS & Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- Custom Styles -->
+  <style>
+    .language-selector {
+      min-width: 120px;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+    .language-selector option {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    .custom-scroll-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .custom-scroll-hide::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+
+  {% block extra_head %}{% endblock %}
 </head>
+
 
 <body>
     <div class="relative flex size-full min-h-screen flex-col bg-[#131712] dark group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
@@ -151,34 +176,62 @@
           </footer>
           
           {% block scripts %}
-          <script src="{% static 'js/gallery.js' %}?v={{ STATIC_VERSION }}"></script>
-          <script src="{% static 'js/anim.js' %}?v={{ STATIC_VERSION }}"></script>
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-          <script>AOS.init();</script>
-          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-          <script>
-            const menuBtn = document.getElementById('menu-btn');
-            const drawer = document.getElementById('mobile-drawer');
-            const drawerClose = document.getElementById('drawer-close');
-            const overlay = document.getElementById('drawer-overlay');
-          
-            menuBtn.addEventListener('click', () => {
-              drawer.classList.remove('-translate-x-full');
-              overlay.classList.remove('hidden');
-            });
-          
-            drawerClose.addEventListener('click', () => {
-              drawer.classList.add('-translate-x-full');
-              overlay.classList.add('hidden');
-            });
-          
-            overlay.addEventListener('click', () => {
-              drawer.classList.add('-translate-x-full');
-              overlay.classList.add('hidden');
-            });
-          </script>
-          
+            <!-- Tailwind CSS -->
+            <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+            <!-- AOS -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>AOS.init();</script>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Swiper init -->
+            <script>
+              const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+            </script>
+
+            <!-- Custom JS -->
+            <script src="{% static 'js/gallery.js' %}?v={{ STATIC_VERSION }}"></script>
+            <script src="{% static 'js/anim.js' %}?v={{ STATIC_VERSION }}"></script>
+
+            <!-- Mobile drawer control -->
+            <script>
+              const menuBtn = document.getElementById('menu-btn');
+              const drawer = document.getElementById('mobile-drawer');
+              const drawerClose = document.getElementById('drawer-close');
+              const overlay = document.getElementById('drawer-overlay');
+
+              menuBtn.addEventListener('click', () => {
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+              });
+
+              drawerClose.addEventListener('click', () => {
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+              });
+
+              overlay.addEventListener('click', () => {
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+              });
+            </script>
           {% endblock %}
+
+
         </div>
     </div>
 </body>
